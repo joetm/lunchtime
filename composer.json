@@ -1,0 +1,10 @@
+{
+    "name": "fubhcc/cafeteria-menu",
+    "authors": [
+        {
+            "name": "Jonas",
+            "email": "jonas.oppenlaender@fu-berlin.de"
+        }
+    ],
+    "require": {}
+}
