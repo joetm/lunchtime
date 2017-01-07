@@ -5,6 +5,9 @@
 
 define('VERSION', '1.0');
 
+define('INPUT', 'elokle.txt');
+define('OUTPUT', 'dinnermenu.json');
+
 $menuitems = array();
 $item = array();
 $currentday = false;
@@ -16,7 +19,7 @@ function trim_str($the_str, $trim_var = ' ') {
 }
 
 
-$f = fopen('elokle.txt', 'rb');
+$f = fopen(INPUT, 'rb');
 
 
 while (($line = fgets($f)) !== false) {
@@ -47,7 +50,7 @@ while (($line = fgets($f)) !== false) {
 		preg_match('~\d+\.\s+([a-z0-9\-\.\,\(\)äüößÖÜÄ\s]+)\s+\d+\,\d+~iu', $line, $matches);
 		if ($matches) {
 			// var_dump($matches);
-			$item['item'] = trim($matches[1]);
+			$item['description'] = trim($matches[1]);
 		}
 		// Allergiker Warnung?
 		$found = preg_match('~\(\d+\.x\)~iu', $line);
@@ -69,23 +72,23 @@ while (($line = fgets($f)) !== false) {
 
 
 	// if all fields were found, store the item
-	if ($currentday && isset($item['item']) && isset($item['price'])) {
+	if ($currentday && isset($item['description']) && isset($item['price'])) {
 		// day of the week
 		$item['weekday'] = $currentday;
 		// words
 		$item['words'] = array();
 		// vegetarisch?
-		if (strpos($item['item'], 'vegetarisch') !== false) {
+		if (strpos($item['description'], 'vegetarisch') !== false) {
 			$item['vegan'] = true;
 			// remove from description
-			$item['item'] = trim(str_replace('vegetarisch', '', $item['item']));
+			$item['description'] = trim(str_replace('vegetarisch', '', $item['description']));
 		} else {
 			$item['vegan'] = false;
 		}
 		// ingredient key
 		$item['ingredients'] = array();
 		$matches = array();
-		preg_match('~\(([\d+\.x]+)\)~i', $item['item'], $matches);
+		preg_match('~\(([\d+\.x]+)\)~i', $item['description'], $matches);
 		if (isset($matches[1])) {
 			$ingredients_array = explode('.', $matches[1]);
 			// filter out the x, because we check for vegetarian meals later
@@ -97,21 +100,21 @@ while (($line = fgets($f)) !== false) {
 				$item['ingredients'][] = $ingredient;
 			}
 			// remove from description
-			$item['item'] = trim(str_replace($matches[0], '', $item['item']));
+			$item['description'] = trim(str_replace($matches[0], '', $item['description']));
 		}
 		//
 		$prep_str = '';
 		// contains Zubereitungsart, z.B. (Bauern Art)?
 		$matches = array();
-		preg_match_all('~(\([a-z0-9\-\s]+\))~iuU', $item['item'], $matches);
+		preg_match_all('~(\([a-z0-9\-\s]+\))~iuU', $item['description'], $matches);
 		if (isset($matches[1])) {
 			foreach($matches[1] as $w) {
 				$item['words'][] = trim($w, "() ,.");
-				$prep_str = str_replace($w, '', $item['item']);
+				$prep_str = str_replace($w, '', $item['description']);
 			}
 		}
 		if ($prep_str === '') {
-			$prep_str = $item['item'];
+			$prep_str = $item['description'];
 		}
 		// find words
 		$words = preg_split('~\s~', $prep_str);
@@ -179,9 +182,20 @@ while (($line = fgets($f)) !== false) {
 	}
 
 }
-
-var_dump($legend);
-
+// var_dump($legend);
 
 fclose($f);
+
+// write to new file
+$w = fopen(OUTPUT, 'w');
+fwrite($w, json_encode(
+	array(
+		'menu'   => $menuitems,
+		'legend' => $legend,
+	), JSON_PRETTY_PRINT
+));
+echo 'written ' . OUTPUT . PHP_EOL;
+fclose($w);
+
+
 

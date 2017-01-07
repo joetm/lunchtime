@@ -1,0 +1,2 @@
+#!/bin/bash
+./RML-Mapper/bin/RML-Mapper -m mapping.rml -o dinnermenu.rdf

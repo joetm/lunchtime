@@ -1,0 +1,368 @@
+{
+    "menu": [
+        {
+            "description": "Spanische Bauernsuppe mit H\u00fchnerfleisch und Gem\u00fcse",
+            "allergy": false,
+            "price": "3,20",
+            "weekday": "Montag",
+            "words": [
+                "Spanische",
+                "Bauernsuppe",
+                "H\u00fchnerfleisch",
+                "Gem\u00fcse"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "4"
+            ]
+        },
+        {
+            "description": "Spaghetti mit Fleischsauce und Reibek\u00e4se",
+            "allergy": true,
+            "price": "3,90",
+            "weekday": "Montag",
+            "words": [
+                "Spaghetti",
+                "Fleischsauce",
+                "Reibek\u00e4se"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "6"
+            ]
+        },
+        {
+            "description": "Ged\u00fcnstetes Fischfilet in Senfsauce mit Gem\u00fcse und Kartoffeln",
+            "allergy": true,
+            "price": "4,70",
+            "weekday": "Montag",
+            "words": [
+                "Ged\u00fcnstetes",
+                "Fischfilet",
+                "Senfsauce",
+                "Gem\u00fcse",
+                "Kartoffeln"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "8"
+            ]
+        },
+        {
+            "description": "Cordon Bleu vom Schwein mit Rahmchampignons, Gem\u00fcse und Pommes Frites",
+            "allergy": true,
+            "price": "5,70",
+            "weekday": "Montag",
+            "words": [
+                "Cordon",
+                "Bleu",
+                "vom",
+                "Schwein",
+                "Rahmchampignons",
+                "Gem\u00fcse",
+                "Pommes",
+                "Frites"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "2"
+            ]
+        },
+        {
+            "description": "Knusper- Gem\u00fcse- Taschen mit Reis und Sauce",
+            "allergy": true,
+            "price": "3,90",
+            "weekday": "Montag",
+            "words": [
+                "Knusper-",
+                "Gem\u00fcse-",
+                "Taschen",
+                "Reis",
+                "Sauce"
+            ],
+            "vegan": true,
+            "ingredients": [
+                "1"
+            ]
+        },
+        {
+            "description": "Ungarische Wurstsuppe mit Baguette",
+            "allergy": false,
+            "price": "3,20",
+            "weekday": "Dienstag",
+            "words": [
+                "Ungarische",
+                "Wurstsuppe",
+                "Baguette"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "2",
+                "14"
+            ]
+        },
+        {
+            "description": "Makkaroni mit Gorgonzola Sauce und Reibek\u00e4se",
+            "allergy": false,
+            "price": "3,90",
+            "weekday": "Dienstag",
+            "words": [
+                "Makkaroni",
+                "Gorgonzola",
+                "Sauce",
+                "Reibek\u00e4se"
+            ],
+            "vegan": true,
+            "ingredients": [
+                "1",
+                "14"
+            ]
+        },
+        {
+            "description": "Kasseler -Braten auf Gr\u00fcnkohl und Petersilienkartoffeln",
+            "allergy": true,
+            "price": "4,70",
+            "weekday": "Dienstag",
+            "words": [
+                "Kasseler",
+                "-Braten",
+                "auf",
+                "Gr\u00fcnkohl",
+                "Petersilienkartoffeln"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "2"
+            ]
+        },
+        {
+            "description": "Rotbarschfilet gebraten, mit Gem\u00fcse und Reis oder Kartoffeln",
+            "allergy": true,
+            "price": "5,50",
+            "weekday": "Dienstag",
+            "words": [
+                "Rotbarschfilet",
+                "gebraten",
+                "Gem\u00fcse",
+                "Reis",
+                "Kartoffeln"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "8"
+            ]
+        },
+        {
+            "description": "Friesischer Fischtopf mit Gem\u00fcse und Reis",
+            "allergy": true,
+            "price": "3,20",
+            "weekday": "Mittwoch",
+            "words": [
+                "Friesischer",
+                "Fischtopf",
+                "Gem\u00fcse",
+                "Reis"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "8"
+            ]
+        },
+        {
+            "description": "Rahmspinat mit gekochte Eier und Stampfkartoffeln",
+            "allergy": true,
+            "price": "3,90",
+            "weekday": "Mittwoch",
+            "words": [
+                "Rahmspinat",
+                "gekochte",
+                "Eier",
+                "Stampfkartoffeln"
+            ],
+            "vegan": true,
+            "ingredients": [
+                "1"
+            ]
+        },
+        {
+            "description": "",
+            "allergy": false,
+            "price": "4,70",
+            "weekday": "Mittwoch",
+            "words": [],
+            "vegan": false,
+            "ingredients": []
+        },
+        {
+            "description": "Tiroler Schnitzel mit Waldpilzrahm und Karotten, Pommes oder Kroketten, Salat",
+            "allergy": true,
+            "price": "5,70",
+            "weekday": "Mittwoch",
+            "words": [
+                "Tiroler",
+                "Schnitzel",
+                "Waldpilzrahm",
+                "Karotten",
+                "Pommes",
+                "Kroketten",
+                "Salat"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "2"
+            ]
+        },
+        {
+            "description": "Vierl\u00e4nder Gem\u00fcseeintopf mit Nudeln",
+            "allergy": false,
+            "price": "3,20",
+            "weekday": "Donnerstag",
+            "words": [
+                "Vierl\u00e4nder",
+                "Gem\u00fcseeintopf",
+                "Nudeln"
+            ],
+            "vegan": true,
+            "ingredients": [
+                "1",
+                "14"
+            ]
+        },
+        {
+            "description": "Gr\u00fctzwurst mit Sauerkraut und Kartoffeln",
+            "allergy": false,
+            "price": "3,90",
+            "weekday": "Donnerstag",
+            "words": [
+                "Gr\u00fctzwurst",
+                "Sauerkraut",
+                "Kartoffeln"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "2",
+                "14"
+            ]
+        },
+        {
+            "description": "Wiener Hackbraten mit Gem\u00fcse und Kartoffeln",
+            "allergy": true,
+            "price": "4,70",
+            "weekday": "Donnerstag",
+            "words": [
+                "Wiener",
+                "Hackbraten",
+                "Gem\u00fcse",
+                "Kartoffeln"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "6"
+            ]
+        },
+        {
+            "description": "Entenkeule mit Rotkohl und Kl\u00f6\u00dfe oder Kartoffeln",
+            "allergy": false,
+            "price": "5,90",
+            "weekday": "Donnerstag",
+            "words": [
+                "Entenkeule",
+                "Rotkohl",
+                "Kl\u00f6\u00dfe",
+                "Kartoffeln"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "4"
+            ]
+        },
+        {
+            "description": "Kesselgulasch mit Baguette",
+            "allergy": false,
+            "price": "3,20",
+            "weekday": "Freitag",
+            "words": [
+                "Kesselgulasch",
+                "Baguette"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "2",
+                "14"
+            ]
+        },
+        {
+            "description": "Nudeln in Pilz- Rahm mit Schmorzwiebeln und K\u00e4se",
+            "allergy": true,
+            "price": "3,90",
+            "weekday": "Freitag",
+            "words": [
+                "Nudeln",
+                "Pilz-",
+                "Rahm",
+                "Schmorzwiebeln",
+                "K\u00e4se"
+            ],
+            "vegan": true,
+            "ingredients": [
+                "1"
+            ]
+        },
+        {
+            "description": "Schweineroulade (Bauern Art) mit Rotkohl und Kartoffeln, Sauce",
+            "allergy": true,
+            "price": "4,70",
+            "weekday": "Freitag",
+            "words": [
+                "Bauern Art",
+                "Schweineroulade",
+                "Rotkohl",
+                "Kartoffeln",
+                "Sauce"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "2"
+            ]
+        },
+        {
+            "description": "Seehechtfilet gebraten, mit Gem\u00fcse und Reis oder Kartoffeln",
+            "allergy": true,
+            "price": "5,70",
+            "weekday": "Freitag",
+            "words": [
+                "Seehechtfilet",
+                "gebraten",
+                "Gem\u00fcse",
+                "Reis",
+                "Kartoffeln"
+            ],
+            "vegan": false,
+            "ingredients": [
+                "8"
+            ]
+        }
+    ],
+    "legend": {
+        "19": "Pflanzeneiwei\u00df",
+        "7": "Schinken \/ger\u00e4uchert",
+        "15": "Zucker",
+        "11": "Sahne",
+        "2": "Schweinefleisch",
+        "13": "Farbstoffe",
+        "1": "Fleischlos",
+        "6": "Rind\/Schweinefleisch",
+        "16": "geschw\u00e4rzt",
+        "12": "Kartoffelst\u00e4rke",
+        "17": "jodiertes Salz",
+        "3": "Rindfleisch",
+        "8": "Fisch",
+        "18": "Geschmacksverst\u00e4rker",
+        "4": "Gefl\u00fcgelfleisch",
+        "9": "Wild",
+        "14": "Gem\u00fcse-Bouillon",
+        "5": "Lammfleisch",
+        "10": "Milch",
+        "20": "Mit Phosphat"
+    }
+}

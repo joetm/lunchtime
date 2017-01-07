@@ -1,0 +1,37 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix fub: <http://www.example.org/fub-hcc/#>.
+
+<#MenuMapping>
+  rml:logicalSource [
+    rml:source "dinnermenu.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.menu"
+  ];
+
+  rr:subjectMap [
+    rr:template "http://loc.example.com/city/{$.location.city}";
+    rr:class schema:City 
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:lat;
+    rr:objectMap [
+      rml:reference "$.venue.latitude" 
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate wgs84_pos:long;
+    rr:objectMap [
+      rml:reference "$.venue.longitude" 
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate gn:countryCode;
+    rr:objectMap [
+      rml:reference "$.location.country" 
+    ]
+  ].
