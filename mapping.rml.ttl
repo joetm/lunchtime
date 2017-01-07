@@ -7,9 +7,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix dct: <http://purl.org/dc/terms/>.
+@prefix time: <http://www.w3.org/2000/10/swap/time#>.
 
-@prefix ex: <http://example.org/>.
-
+@prefix wd: <http://www.wikidata.org/entity/>.
 @prefix food: <http://purl.org/ontology/fo/>.
 
 @prefix fublunch: <http://www.example.org/fub-hcc/lunch/>.
@@ -33,36 +33,103 @@
       rml:reference "$.words";
     ]
   ];
+  rr:predicateObjectMap [
+    rr:predicate fublunch:keywords;
+    rr:objectMap [
+      rml:reference "$.translations.en.words";
+      rr:language "en";
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate fublunch:keywords;
+    rr:objectMap [
+      rml:reference "$.translations.fr.words";
+      rr:language "fr";
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate fublunch:keywords;
+    rr:objectMap [
+      rml:reference "$.translations.zh.words";
+      rr:language "zh";
+    ]
+  ];
 
   rr:predicateObjectMap [
     rr:predicate fublunch:ingredients;
+    # rr:predicate wd:P527; # has_part
     rr:objectMap [
       rml:reference "$.ingredients";
     ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate fublunch:sidedish;
+    rr:predicate food:side_dish;
     rr:objectMap [
       rml:reference "$.sidedishes";
     ]
   ];
 
   rr:predicateObjectMap [
+    rr:predicate food:side_dish;
+    rr:objectMap [
+      rml:reference "$.translations.en.sidedishes";
+      rr:language "en"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate food:side_dish;
+    rr:objectMap [
+      rml:reference "$.translations.fr.sidedishes";
+      rr:language "fr"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate food:side_dish;
+    rr:objectMap [
+      rml:reference "$.translations.zh.sidedishes";
+      rr:language "zh"
+    ]
+  ];
+
+  rr:predicateObjectMap [
     rr:predicate dct:title;
     rr:objectMap [
-      rml:reference "$.description";
-      rr:language "de"
+      rml:reference "$.description"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate fublunch:weekday;
+    rr:predicate dct:title;
     rr:objectMap [
-      rml:reference "$.weekday"
+      rml:reference "$.translations.en.description";
+      rr:language "en"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate fublunch:price;
+    rr:predicate dct:title;
+    rr:objectMap [
+      rml:reference "$.translations.fr.description";
+      rr:language "fr"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate dct:title;
+    rr:objectMap [
+      rml:reference "$.translations.zh.description";
+      rr:language "zh"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    # rr:predicate time:dayOfWeek;
+    rr:predicate wd:P2894;
+    rr:objectMap [
+      rml:reference "$.weekday";
+    ]
+  ];
+  rr:predicateObjectMap [
+    # rr:predicate fublunch:price;
+    rr:predicate wd:P2284; # price
     rr:objectMap [
       rml:reference "$.price" ;
       rr:datatype xsd:float ;
@@ -82,9 +149,3 @@
       rr:datatype xsd:boolean ;
     ]
   ].
-#  rr:predicateObjectMap [
-#    rr:predicate food:diet;
-#    rr:objectMap [
-#      rml:reference "$.vegetarian" ;
-#    ]
-#  ].

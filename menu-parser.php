@@ -206,6 +206,10 @@ while (($line = fgets($f)) !== false) {
 
 fclose($f);
 
+
+echo 'menuparsing: OK.' . PHP_EOL;
+
+
 // ------------------------------------
 // Translations
 // ------------------------------------
@@ -213,6 +217,7 @@ fclose($f);
 define('GOOGLEPROJECTID', 'fub-hcc');
 define('GOOGLE_ACCESS_TOKEN', 'ya29.El_MA7vLh1t1lsRdJgMFqucCE9cgxanwfl4BmtN7hBzOvPnUitgwfUbWIyPahDkmdHxGLjfzt6qaFfTYp0fk8k1EQWbWsA59dKI5z6MAgJqT--Z0gKW5cPGNKXM6NM17ng');
 
+echo 'translating...';
 
 require __DIR__ . '/vendor/autoload.php';
 use Google\Cloud\Translate\TranslateClient;
@@ -237,25 +242,62 @@ function translate($text = '', $target = 'en') {
     return $translation['text'];
 }
 
-// translate the menu
+// translate the title
 foreach ($menuitems as $key => $item) {
 
-    # The text to translate
-    $text = $item['description'];
+    $menuitems[$key]['translations'] = array();
+    $menuitems[$key]['translations']['en'] = array();
+    $menuitems[$key]['translations']['fr'] = array();
+    $menuitems[$key]['translations']['zh'] = array();
 
+    // title translation
+    // ---------------------
     // EN
-    $menuitems[$key]['description_en'] = translate($text, 'en');
+    $menuitems[$key]['translations']['en']['description'] = translate($item['description'], 'en');
     // FR
-    $menuitems[$key]['description_fr'] = translate($text, 'fr');
+    $menuitems[$key]['translations']['fr']['description'] = translate($item['description'], 'fr');
     // ZH
-    $menuitems[$key]['description_zh'] = translate($text, 'zh');
+    $menuitems[$key]['translations']['zh']['description'] = translate($item['description'], 'zh');
+
+    // keyword translation
+    // ---------------------
+    if (isset($item['words'])) {
+    $menuitems[$key]['translations']['en']['words'] = array();
+    $menuitems[$key]['translations']['fr']['words'] = array();
+    $menuitems[$key]['translations']['zh']['words'] = array();
+        // translate the keywords
+        foreach ($item['words'] as $wordkey => $word) {
+            // EN
+            $menuitems[$key]['translations']['en']['words'][$wordkey] = translate($word, 'en');
+            // FR
+            $menuitems[$key]['translations']['fr']['words'][$wordkey] = translate($word, 'fr');
+            // ZH
+            $menuitems[$key]['translations']['zh']['words'][$wordkey] = translate($word, 'zh');
+        } // foreach
+    } // if
+
+    // sidedish translation(s)
+    // ---------------------
+    if (isset($item['sidedishes']) && $item['sidedishes']) {
+        $menuitems[$key]['translations']['en']['sidedishes'] = array();
+        $menuitems[$key]['translations']['fr']['sidedishes'] = array();
+        $menuitems[$key]['translations']['zh']['sidedishes'] = array();
+        foreach ($item['sidedishes'] as $sidedishkey => $sidedish) {
+            // EN
+            $menuitems[$key]['translations']['en']['sidedishes'][$sidedishkey] = translate($sidedish, 'en');
+            // FR
+            $menuitems[$key]['translations']['fr']['sidedishes'][$sidedishkey] = translate($sidedish, 'fr');
+            // ZH
+            $menuitems[$key]['translations']['zh']['sidedishes'][$sidedishkey] = translate($sidedish, 'zh');
+        } // foreach
+    } // if
 
 } // foreach
-
+echo 'OK.' . PHP_EOL;
 
 
 // ------------------------------------
-// write to new file
+// output: write to new file
 // ------------------------------------
 $w = fopen(OUTPUT, 'w');
 fwrite($w, json_encode(
