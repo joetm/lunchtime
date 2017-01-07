@@ -127,6 +127,7 @@
       rml:reference "$.weekday";
     ]
   ];
+
   rr:predicateObjectMap [
     # rr:predicate fublunch:price;
     rr:predicate wd:P2284; # price
@@ -135,6 +136,7 @@
       rr:datatype xsd:float ;
     ]
   ];
+
   rr:predicateObjectMap [
     rr:predicate fublunch:allergy;
     rr:objectMap [
