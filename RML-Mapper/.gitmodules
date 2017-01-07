@@ -1,0 +1,21 @@
+[submodule "RML-Processor"]
+	path = RML-Processor
+	url = https://github.com/RMLio/RML-Processor.git
+[submodule "RML-Model"]
+	path = RML-Model
+	url = https://github.com/RMLio/RML-Model.git
+[submodule "RML-Condition"]
+	path = RML-Condition
+	url = https://github.com/RMLio/RML-Condition.git
+[submodule "RML-DataRetrieval"]
+	path = RML-DataRetrieval
+	url = https://github.com/RMLio/RML-DataRetrieval.git
+[submodule "RML-MapDocHandler"]
+	path = RML-MapDocHandler
+	url = https://github.com/RMLio/RML-MapDocHandler.git
+[submodule "RML-MetadataHandler"]
+	path = RML-MetadataHandler
+	url = https://github.com/RMLio/RML-MetadataHandler.git
+[submodule "RML-LogicalSourceHandler"]
+	path = RML-LogicalSourceHandler
+	url = https://github.com/RMLio/RML-LogicalSourceHandler.git
