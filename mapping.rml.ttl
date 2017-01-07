@@ -1,0 +1,77 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+
+@prefix ex: <http://example.org/>.
+
+@prefix food: <http://purl.org/ontology/fo/>.
+
+@prefix fublunch: <http://www.example.org/fub-hcc/lunch/>.
+
+
+<#MenuItemMapping>
+  rml:logicalSource [
+    rml:source "dinnermenu.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.menu"
+  ];
+
+  rr:subjectMap [
+    rr:template "fublunch:{$.id}";
+    rr:class food:Menu
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate fublunch:keywords;
+    rr:objectMap [
+      rml:reference "$.words";
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate fublunch:ingredients;
+    rr:objectMap [
+      rml:reference "$.ingredients";
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dct:description;
+    rr:objectMap [
+      rml:reference "$.description";
+      rr:language "de"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate fublunch:weekday;
+    rr:objectMap [
+      rml:reference "$.weekday"
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate fublunch:price;
+    rr:objectMap [
+      rml:reference "$.price" ;
+      rr:datatype xsd:float ;
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate fublunch:allergy;
+    rr:objectMap [
+      rml:reference "$.allergy" ;
+      rr:datatype xsd:boolean ;
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate fublunch:vegan;
+    rr:objectMap [
+      rml:reference "$.vegan" ;
+      rr:datatype xsd:boolean ;
+    ]
+  ].

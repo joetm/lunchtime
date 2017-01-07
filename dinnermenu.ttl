@@ -1,0 +1,186 @@
+
+<fublunch:menuitem_13> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Mittwoch" ;
+	<http://purl.org/dc/terms/description> "Tiroler Schnitzel mit Waldpilzrahm und Karotten, Pommes oder Kroketten, Salat"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Pommes" , "Tiroler" , "Schnitzel" , "Waldpilzrahm" , "Karotten" , "Kroketten" , "Salat" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" .
+
+<fublunch:menuitem_14> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Donnerstag" ;
+	<http://purl.org/dc/terms/description> "Vierländer Gemüseeintopf mit Nudeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://www.example.org/fub-hcc/lunch/vegan> true ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Vierländer" , "Gemüseeintopf" , "Nudeln" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" , "Gemüse-Bouillon" .
+
+<fublunch:menuitem_15> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Donnerstag" ;
+	<http://purl.org/dc/terms/description> "Grützwurst mit Sauerkraut und Kartoffeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Grützwurst" , "Sauerkraut" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" , "Gemüse-Bouillon" .
+
+<fublunch:menuitem_16> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Donnerstag" ;
+	<http://purl.org/dc/terms/description> "Wiener Hackbraten mit Gemüse und Kartoffeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Wiener" , "Hackbraten" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Rind/Schweinefleisch" .
+
+<fublunch:menuitem_17> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "5.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Donnerstag" ;
+	<http://purl.org/dc/terms/description> "Entenkeule mit Rotkohl und Klöße oder Kartoffeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Entenkeule" , "Rotkohl" , "Klöße" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Geflügelfleisch" .
+
+<fublunch:menuitem_19> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Freitag" ;
+	<http://purl.org/dc/terms/description> "Nudeln in Pilz- Rahm mit Schmorzwiebeln und Käse"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> true ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Nudeln" , "Pilz-" , "Rahm" , "Schmorzwiebeln" , "Käse" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" .
+
+<fublunch:menuitem_20> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Freitag" ;
+	<http://purl.org/dc/terms/description> "Schweineroulade (Bauern Art) mit Rotkohl und Kartoffeln, Sauce"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Sauce" , "Rotkohl" , "Bauern Art" , "Schweineroulade" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" .
+
+<fublunch:menuitem_21> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Freitag" ;
+	<http://purl.org/dc/terms/description> "Seehechtfilet gebraten, mit Gemüse und Reis oder Kartoffeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Reis" , "gebraten" , "Seehechtfilet" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" .
+
+<fublunch:menuitem_1> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Montag" ;
+	<http://purl.org/dc/terms/description> "Spanische Bauernsuppe mit Hühnerfleisch und Gemüse"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Spanische" , "Bauernsuppe" , "Hühnerfleisch" , "Gemüse" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Geflügelfleisch" .
+
+<fublunch:menuitem_2> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Montag" ;
+	<http://purl.org/dc/terms/description> "Spaghetti mit Fleischsauce und Reibekäse"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Spaghetti" , "Fleischsauce" , "Reibekäse" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Rind/Schweinefleisch" .
+
+<fublunch:menuitem_3> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Montag" ;
+	<http://purl.org/dc/terms/description> "Gedünstetes Fischfilet in Senfsauce mit Gemüse und Kartoffeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Gedünstetes" , "Fischfilet" , "Senfsauce" , "Kartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" .
+
+<fublunch:menuitem_4> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Montag" ;
+	<http://purl.org/dc/terms/description> "Cordon Bleu vom Schwein mit Rahmchampignons, Gemüse und Pommes Frites"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Cordon" , "Bleu" , "vom" , "Schwein" , "Rahmchampignons" , "Pommes" , "Frites" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" .
+
+<fublunch:menuitem_5> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Montag" ;
+	<http://purl.org/dc/terms/description> "Knusper- Gemüse- Taschen mit Reis und Sauce"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> true ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Knusper-" , "Gemüse-" , "Taschen" , "Reis" , "Sauce" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" .
+
+<fublunch:menuitem_6> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Dienstag" ;
+	<http://purl.org/dc/terms/description> "Ungarische Wurstsuppe mit Baguette"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Ungarische" , "Wurstsuppe" , "Baguette" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" , "Gemüse-Bouillon" .
+
+<fublunch:menuitem_7> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Dienstag" ;
+	<http://purl.org/dc/terms/description> "Makkaroni mit Gorgonzola Sauce und Reibekäse"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://www.example.org/fub-hcc/lunch/vegan> true ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Reibekäse" , "Sauce" , "Makkaroni" , "Gorgonzola" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" , "Gemüse-Bouillon" .
+
+<fublunch:menuitem_8> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Dienstag" ;
+	<http://purl.org/dc/terms/description> "Kasseler -Braten auf Grünkohl und Petersilienkartoffeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Kasseler" , "-Braten" , "auf" , "Grünkohl" , "Petersilienkartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" .
+
+<fublunch:menuitem_9> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "5.50"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Dienstag" ;
+	<http://purl.org/dc/terms/description> "Rotbarschfilet gebraten, mit Gemüse und Reis oder Kartoffeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Reis" , "Rotbarschfilet" , "gebraten" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" .
+
+<fublunch:menuitem_10> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Mittwoch" ;
+	<http://purl.org/dc/terms/description> "Friesischer Fischtopf mit Gemüse und Reis"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Reis" , "Friesischer" , "Fischtopf" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" .
+
+<fublunch:menuitem_11> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Mittwoch" ;
+	<http://purl.org/dc/terms/description> "Rahmspinat mit gekochte Eier und Stampfkartoffeln"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://www.example.org/fub-hcc/lunch/vegan> true ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Rahmspinat" , "gekochte" , "Eier" , "Stampfkartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" .
+
+<fublunch:menuitem_12> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Mittwoch" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false .
+
+<fublunch:menuitem_18> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/price> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/weekday> "Freitag" ;
+	<http://purl.org/dc/terms/description> "Kesselgulasch mit Baguette"@de ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://www.example.org/fub-hcc/lunch/vegan> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Baguette" , "Kesselgulasch" ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" , "Gemüse-Bouillon" .
