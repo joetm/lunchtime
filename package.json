@@ -1,0 +1,22 @@
+{
+  "name": "lunchtime",
+  "version": "0.0.1",
+  "description": "What's for dinner?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joetm/lunchtime.git"
+  },
+  "author": "JO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joetm/lunchtime/issues"
+  },
+  "homepage": "https://github.com/joetm/lunchtime#readme",
+  "dependencies": {
+    "rdflib": "^0.13.0"
+  }
+}
