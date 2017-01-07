@@ -3,6 +3,7 @@
         {
             "description": "Spanische Bauernsuppe mit H\u00fchnerfleisch und Gem\u00fcse",
             "allergy": false,
+            "sidedishes": [],
             "price": "3.20",
             "weekday": "Montag",
             "words": [
@@ -20,6 +21,7 @@
         {
             "description": "Spaghetti mit Fleischsauce und Reibek\u00e4se",
             "allergy": true,
+            "sidedishes": [],
             "price": "3.90",
             "weekday": "Montag",
             "words": [
@@ -36,6 +38,7 @@
         {
             "description": "Ged\u00fcnstetes Fischfilet in Senfsauce mit Gem\u00fcse und Kartoffeln",
             "allergy": true,
+            "sidedishes": [],
             "price": "4.70",
             "weekday": "Montag",
             "words": [
@@ -54,6 +57,7 @@
         {
             "description": "Cordon Bleu vom Schwein mit Rahmchampignons, Gem\u00fcse und Pommes Frites",
             "allergy": true,
+            "sidedishes": [],
             "price": "5.70",
             "weekday": "Montag",
             "words": [
@@ -75,6 +79,7 @@
         {
             "description": "Knusper- Gem\u00fcse- Taschen mit Reis und Sauce",
             "allergy": true,
+            "sidedishes": [],
             "price": "3.90",
             "weekday": "Montag",
             "words": [
@@ -93,6 +98,9 @@
         {
             "description": "Ungarische Wurstsuppe mit Baguette",
             "allergy": false,
+            "sidedishes": [
+                "Baguette"
+            ],
             "price": "3.20",
             "weekday": "Dienstag",
             "words": [
@@ -110,6 +118,7 @@
         {
             "description": "Makkaroni mit Gorgonzola Sauce und Reibek\u00e4se",
             "allergy": false,
+            "sidedishes": [],
             "price": "3.90",
             "weekday": "Dienstag",
             "words": [
@@ -128,6 +137,7 @@
         {
             "description": "Kasseler -Braten auf Gr\u00fcnkohl und Petersilienkartoffeln",
             "allergy": true,
+            "sidedishes": [],
             "price": "4.70",
             "weekday": "Dienstag",
             "words": [
@@ -146,6 +156,7 @@
         {
             "description": "Rotbarschfilet gebraten, mit Gem\u00fcse und Reis oder Kartoffeln",
             "allergy": true,
+            "sidedishes": [],
             "price": "5.50",
             "weekday": "Dienstag",
             "words": [
@@ -164,6 +175,7 @@
         {
             "description": "Friesischer Fischtopf mit Gem\u00fcse und Reis",
             "allergy": true,
+            "sidedishes": [],
             "price": "3.20",
             "weekday": "Mittwoch",
             "words": [
@@ -181,6 +193,7 @@
         {
             "description": "Rahmspinat mit gekochte Eier und Stampfkartoffeln",
             "allergy": true,
+            "sidedishes": [],
             "price": "3.90",
             "weekday": "Mittwoch",
             "words": [
@@ -198,6 +211,7 @@
         {
             "description": "",
             "allergy": false,
+            "sidedishes": [],
             "price": "4.70",
             "weekday": "Mittwoch",
             "words": [],
@@ -208,6 +222,9 @@
         {
             "description": "Tiroler Schnitzel mit Waldpilzrahm und Karotten, Pommes oder Kroketten, Salat",
             "allergy": true,
+            "sidedishes": [
+                "Salat"
+            ],
             "price": "5.70",
             "weekday": "Mittwoch",
             "words": [
@@ -228,6 +245,7 @@
         {
             "description": "Vierl\u00e4nder Gem\u00fcseeintopf mit Nudeln",
             "allergy": false,
+            "sidedishes": [],
             "price": "3.20",
             "weekday": "Donnerstag",
             "words": [
@@ -245,6 +263,7 @@
         {
             "description": "Gr\u00fctzwurst mit Sauerkraut und Kartoffeln",
             "allergy": false,
+            "sidedishes": [],
             "price": "3.90",
             "weekday": "Donnerstag",
             "words": [
@@ -262,6 +281,7 @@
         {
             "description": "Wiener Hackbraten mit Gem\u00fcse und Kartoffeln",
             "allergy": true,
+            "sidedishes": [],
             "price": "4.70",
             "weekday": "Donnerstag",
             "words": [
@@ -279,6 +299,7 @@
         {
             "description": "Entenkeule mit Rotkohl und Kl\u00f6\u00dfe oder Kartoffeln",
             "allergy": false,
+            "sidedishes": [],
             "price": "5.90",
             "weekday": "Donnerstag",
             "words": [
@@ -296,6 +317,9 @@
         {
             "description": "Kesselgulasch mit Baguette",
             "allergy": false,
+            "sidedishes": [
+                "Baguette"
+            ],
             "price": "3.20",
             "weekday": "Freitag",
             "words": [
@@ -312,6 +336,7 @@
         {
             "description": "Nudeln in Pilz- Rahm mit Schmorzwiebeln und K\u00e4se",
             "allergy": true,
+            "sidedishes": [],
             "price": "3.90",
             "weekday": "Freitag",
             "words": [
@@ -330,6 +355,7 @@
         {
             "description": "Schweineroulade (Bauern Art) mit Rotkohl und Kartoffeln, Sauce",
             "allergy": true,
+            "sidedishes": [],
             "price": "4.70",
             "weekday": "Freitag",
             "words": [
@@ -348,6 +374,7 @@
         {
             "description": "Seehechtfilet gebraten, mit Gem\u00fcse und Reis oder Kartoffeln",
             "allergy": true,
+            "sidedishes": [],
             "price": "5.70",
             "weekday": "Freitag",
             "words": [

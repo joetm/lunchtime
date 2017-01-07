@@ -42,7 +42,14 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate dct:description;
+    rr:predicate fublunch:sidedish;
+    rr:objectMap [
+      rml:reference "$.sidedishes";
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dct:title;
     rr:objectMap [
       rml:reference "$.description";
       rr:language "de"

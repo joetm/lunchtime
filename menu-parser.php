@@ -11,8 +11,10 @@ define('OUTPUT', 'dinnermenu.json');
 $menuitems = array();
 $legend = array();
 $currentday = false;
+
 $weekdays = array('Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag');
 $blacklist_words = array('und', 'oder', 'mit', 'in');
+$sidedishes = array('Salat', 'Brot', 'Baguette');
 
 function trim_str($the_str, $trim_var = ' ') {
 	return trim($the_str, $trim_var);
@@ -105,6 +107,15 @@ while (($line = fgets($f)) !== false) {
 		} else {
 			$item['allergy'] = false;
 		}
+		// Side-dish included?
+		// --------------------------------------
+		$sides = array();
+		foreach ($sidedishes as $sidedish) {
+			if (strpos($line, $sidedish) !== false) {
+				$sides[] = $sidedish;
+			}
+		}
+		$item['sidedishes'] = $sides;
 	}
 
 	// detect price
@@ -125,7 +136,7 @@ while (($line = fgets($f)) !== false) {
 		// --------------------------------------
 		if (strpos($item['description'], 'vegetarisch') !== false) {
 			$item['vegan'] = true;
-			// remove from description
+			// remove 'vegetarisch' from the description
 			$item['description'] = trim(str_replace('vegetarisch', '', $item['description']));
 		} else {
 			$item['vegan'] = false;
