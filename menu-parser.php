@@ -135,11 +135,11 @@ while (($line = fgets($f)) !== false) {
 		// vegetarisch?
 		// --------------------------------------
 		if (strpos($item['description'], 'vegetarisch') !== false) {
-			$item['vegan'] = true;
+			$item['vegetarian'] = true;
 			// remove 'vegetarisch' from the description
 			$item['description'] = trim(str_replace('vegetarisch', '', $item['description']));
 		} else {
-			$item['vegan'] = false;
+			$item['vegetarian'] = false;
 		}
 		// ingredient key
 		// --------------------------------------
@@ -204,8 +204,59 @@ while (($line = fgets($f)) !== false) {
 
 }
 
+fclose($f);
 
+// ------------------------------------
+// Translations
+// ------------------------------------
+
+define('GOOGLEPROJECTID', 'fub-hcc');
+define('GOOGLE_ACCESS_TOKEN', 'ya29.El_MA7vLh1t1lsRdJgMFqucCE9cgxanwfl4BmtN7hBzOvPnUitgwfUbWIyPahDkmdHxGLjfzt6qaFfTYp0fk8k1EQWbWsA59dKI5z6MAgJqT--Z0gKW5cPGNKXM6NM17ng');
+
+
+require __DIR__ . '/vendor/autoload.php';
+use Google\Cloud\Translate\TranslateClient;
+
+# Instantiate a client
+$translationClient = new TranslateClient([
+    'projectId' => GOOGLEPROJECTID
+]);
+
+function translate($text = '', $target = 'en') {
+    global $translationClient;
+    if (!$text) {
+        return '';
+    }
+    // run the translation
+    $translation = $translationClient->translate($text, [
+        'target' => $target
+    ]);
+    if (!isset($translation['text']) || !$translation['text']) {
+        return '';
+    }
+    return $translation['text'];
+}
+
+// translate the menu
+foreach ($menuitems as $key => $item) {
+
+    # The text to translate
+    $text = $item['description'];
+
+    // EN
+    $menuitems[$key]['description_en'] = translate($text, 'en');
+    // FR
+    $menuitems[$key]['description_fr'] = translate($text, 'fr');
+    // ZH
+    $menuitems[$key]['description_zh'] = translate($text, 'zh');
+
+} // foreach
+
+
+
+// ------------------------------------
 // write to new file
+// ------------------------------------
 $w = fopen(OUTPUT, 'w');
 fwrite($w, json_encode(
 	array(
@@ -215,8 +266,5 @@ fwrite($w, json_encode(
 ));
 echo 'written ' . OUTPUT . PHP_EOL;
 fclose($w);
-
-
-fclose($f);
-
+// ------------------------------------
 

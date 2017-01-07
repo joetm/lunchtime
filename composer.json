@@ -6,5 +6,7 @@
             "email": "jonas.oppenlaender@fu-berlin.de"
         }
     ],
-    "require": {}
+    "require": {
+        "google/cloud": "^0.20.1"
+    }
 }

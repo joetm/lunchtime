@@ -76,9 +76,15 @@
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate fublunch:vegan;
+    rr:predicate fublunch:vegetarian;
     rr:objectMap [
-      rml:reference "$.vegan" ;
+      rml:reference "$.vegetarian" ;
       rr:datatype xsd:boolean ;
     ]
   ].
+#  rr:predicateObjectMap [
+#    rr:predicate food:diet;
+#    rr:objectMap [
+#      rml:reference "$.vegetarian" ;
+#    ]
+#  ].
