@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/joetm/lunchtime#readme",
   "dependencies": {
-    "rdflib": "^0.13.0"
+    "rdf-ext": "^0.3.0"
   }
 }
