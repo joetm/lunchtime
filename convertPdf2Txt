@@ -1,0 +1,2 @@
+#!/bin/bash
+pdftotext elokle.pdf elokle.txt -layout

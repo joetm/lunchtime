@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/joetm/lunchtime#readme",
   "dependencies": {
-    "rdf-ext": "^0.3.0"
+    "rdf-ext": "^0.3.0",
+    "rdf-parser-n3": "^0.3.0",
+    "rdf-serializer-ntriples": "^0.3.0",
+    "rdf-store-fs": "^0.3.1",
+    "rdf-store-inmemory": "^0.3.0",
+    "rdf-store-singlegraph": "^0.3.0",
+    "simplerdf": "^0.2.14"
   }
 }
