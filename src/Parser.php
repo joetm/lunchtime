@@ -26,6 +26,9 @@ class Parser
     /** @var array $weekdays Days of the week */
     private $weekdays = array('Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag');
 
+    /** @var array $legend Legend entries */
+    protected $legend = array();
+
     /** @var string $inputfile File name (or path) to the file that contains the info to parse */
     private $inputfile = null;
 
@@ -90,8 +93,6 @@ class Parser
         // 4   Geflügelfleisch                     9   Wild                           14   Gemüse-Bouillon           19   Pflanzeneiweiß
         // 5   Lammfleisch                        10   Milch                          15   Zucker                    20   Mit Phosphat
 
-        $legend = array();
-
         rewind($this->f);
 
         while (($line = fgets($this->f)) !== false) {
@@ -106,10 +107,10 @@ class Parser
             $matches = array();
             preg_match_all('~(\d\d?[a-züöäß\/\(\)\s\-]+)~iu', $line, $matches);
             if (isset($matches[1])) {
-                foreach ($matches[1] as $legend_entry) {
-                    $legend_entry = trim($legend_entry);
+                foreach ($matches[1] as $legendEntry) {
+                    $legendEntry = trim($legendEntry);
                     $linematches = array();
-                    preg_match('~(\d+)\s+([a-zöäüß0-9\s\-/]+)~iu', $legend_entry, $linematches);
+                    preg_match('~(\d+)\s+([a-zöäüß0-9\s\-/]+)~iu', $legendEntry, $linematches);
                     if ($linematches) {
                         // var_dump($matches);continue;
                         // $item = array_map('Helper::trimStr', $item);
@@ -118,7 +119,7 @@ class Parser
                         if ($key > 30) {
                             continue;
                         }
-                        $legend[$key] = trim($linematches[2]);
+                        $this->legend[$key] = trim($linematches[2]);
                     }
                 }
             }
@@ -126,7 +127,7 @@ class Parser
 
         // var_dump($legend);
 
-        return $legend;
+        return $this->legend;
     }
 
     /**
@@ -220,15 +221,15 @@ class Parser
                 preg_match('~\(([\d+\.x]+)\)~i', $item['description'], $matches);
                 if (isset($matches[1])) {
                     $ingredients_array = explode('.', $matches[1]);
-                    // filter out the x, because we check for vegetarian meals later
                     foreach ($ingredients_array as $ingredient) {
                         $ingredient = trim($ingredient);
+                        // filter out the x, because we check for vegetarian meals later
                         if ($ingredient === '' || $ingredient === 'x') {
                             continue;
                         }
                         // lookup
-                        if (isset($legend[(int) $ingredient])) {
-                            $item['ingredients'][] = $legend[(int) $ingredient];
+                        if (isset($this->legend[(int) $ingredient])) {
+                            $item['ingredients'][] = $this->legend[(int) $ingredient];
                         }
                         // $item['ingredients'][] = $ingredient;
                     }

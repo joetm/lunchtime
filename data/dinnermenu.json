@@ -13,7 +13,9 @@
                 "Gem\u00fcse"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Gefl\u00fcgelfleisch"
+            ],
             "id": "menuitem_1"
         },
         {
@@ -28,7 +30,9 @@
                 "Reibek\u00e4se"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Rind\/Schweinefleisch"
+            ],
             "id": "menuitem_2"
         },
         {
@@ -45,7 +49,9 @@
                 "Kartoffeln"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Fisch"
+            ],
             "id": "menuitem_3"
         },
         {
@@ -65,7 +71,9 @@
                 "Frites"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Schweinefleisch"
+            ],
             "id": "menuitem_4"
         },
         {
@@ -82,7 +90,9 @@
                 "Sauce"
             ],
             "vegetarian": true,
-            "ingredients": [],
+            "ingredients": [
+                "Fleischlos"
+            ],
             "id": "menuitem_5"
         },
         {
@@ -99,7 +109,10 @@
                 "Baguette"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Schweinefleisch",
+                "Gem\u00fcse-Bouillon"
+            ],
             "id": "menuitem_6"
         },
         {
@@ -115,7 +128,10 @@
                 "Reibek\u00e4se"
             ],
             "vegetarian": true,
-            "ingredients": [],
+            "ingredients": [
+                "Fleischlos",
+                "Gem\u00fcse-Bouillon"
+            ],
             "id": "menuitem_7"
         },
         {
@@ -132,7 +148,9 @@
                 "Petersilienkartoffeln"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Schweinefleisch"
+            ],
             "id": "menuitem_8"
         },
         {
@@ -149,7 +167,9 @@
                 "Kartoffeln"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Fisch"
+            ],
             "id": "menuitem_9"
         },
         {
@@ -165,7 +185,9 @@
                 "Reis"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Fisch"
+            ],
             "id": "menuitem_10"
         },
         {
@@ -181,7 +203,9 @@
                 "Stampfkartoffeln"
             ],
             "vegetarian": true,
-            "ingredients": [],
+            "ingredients": [
+                "Fleischlos"
+            ],
             "id": "menuitem_11"
         },
         {
@@ -213,7 +237,9 @@
                 "Salat"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Schweinefleisch"
+            ],
             "id": "menuitem_13"
         },
         {
@@ -228,7 +254,10 @@
                 "Nudeln"
             ],
             "vegetarian": true,
-            "ingredients": [],
+            "ingredients": [
+                "Fleischlos",
+                "Gem\u00fcse-Bouillon"
+            ],
             "id": "menuitem_14"
         },
         {
@@ -243,7 +272,10 @@
                 "Kartoffeln"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Schweinefleisch",
+                "Gem\u00fcse-Bouillon"
+            ],
             "id": "menuitem_15"
         },
         {
@@ -259,7 +291,9 @@
                 "Kartoffeln"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Rind\/Schweinefleisch"
+            ],
             "id": "menuitem_16"
         },
         {
@@ -275,7 +309,9 @@
                 "Kartoffeln"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Gefl\u00fcgelfleisch"
+            ],
             "id": "menuitem_17"
         },
         {
@@ -291,7 +327,10 @@
                 "Baguette"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Schweinefleisch",
+                "Gem\u00fcse-Bouillon"
+            ],
             "id": "menuitem_18"
         },
         {
@@ -308,7 +347,9 @@
                 "K\u00e4se"
             ],
             "vegetarian": true,
-            "ingredients": [],
+            "ingredients": [
+                "Fleischlos"
+            ],
             "id": "menuitem_19"
         },
         {
@@ -325,7 +366,9 @@
                 "Sauce"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Schweinefleisch"
+            ],
             "id": "menuitem_20"
         },
         {
@@ -342,7 +385,9 @@
                 "Kartoffeln"
             ],
             "vegetarian": false,
-            "ingredients": [],
+            "ingredients": [
+                "Fisch"
+            ],
             "id": "menuitem_21"
         }
     ]
