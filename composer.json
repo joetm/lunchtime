@@ -6,13 +6,27 @@
             "email": "jonas.oppenlaender@fu-berlin.de"
         }
     ],
+    "scripts": {
+        "phpunit": "./vendor/bin/phpunit -c ./dev-tools/phpunit.xml",
+        "load": "composer dump-autoload",
+        "test": "phpunit --bootstrap vendor/autoload.php tests",
+        "lint": "./vendor/bin/phpcs --warning-severity=0 --extensions=php --ignore=vendor/*,tests/*,data/*,cache/*,node_modules/*,repositories/*,RML-Mapper/*,CodeStandard/* --standard=CodeStandard ./",
+        "parallel-lint": "./vendor/bin/parallel-lint --exclude vendor .",
+        "docs": "./vendor/bin/phpdoc -c ./dev-tools/phpdoc-config.xml"
+    },
     "autoload": {
         "psr-4": {
-            "LunchTime\\": "src/"
+            "LunchTime\\": ["src/", "src/Exceptions"]
         }
     },
     "require": {
         "google/cloud": "^0.20.1",
         "hassankhan/config": "^0.10.0"
+    },
+    "require-dev": {
+        "php": ">=5.4.0",
+        "phpunit/PHPUnit": "^5.7",
+        "squizlabs/php_codesniffer": "^2.7",
+        "php-console/php-console": "^3.1"
     }
 }

@@ -1,7 +1,15 @@
 <?php
-/*
-	Cafeteria Menu Parser
-*/
+
+/**
+ * Cafeteria Menu Parser
+ *
+ * @package   LunchTime
+ * @author    J. Oppenlaender
+ * @copyright MIT
+ * @link      https://github.com/joetm/lunchtime
+ * @version   '2017-01'
+ *
+ */
 
 error_reporting(-1); // report ALL errors
 
@@ -12,7 +20,6 @@ use LunchTime\App;
 
 define('INPUT', __DIR__ . '/data/elokle.txt');
 define('OUTPUT', __DIR__ . '/data/dinnermenu.json');
-
 
 $app = new App();
 

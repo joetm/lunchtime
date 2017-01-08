@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<ruleset name="LunchTime">
+
+  <description>PSR-1, PSR-2, and (most of) the Squiz commenting/DocBlock standards</description>
+
+  <!-- exclude paths we don't want to check -->
+  <exclude-pattern>cache/*</exclude-pattern>
+  <exclude-pattern>data/*</exclude-pattern>
+  <exclude-pattern>node_modules/*</exclude-pattern>
+  <exclude-pattern>repositories/*</exclude-pattern>
+  <exclude-pattern>RML-Mapper/*</exclude-pattern>
+  <exclude-pattern>tools/*</exclude-pattern>
+  <exclude-pattern>vendor/*</exclude-pattern>
+
+  <!-- import PSR1 and PSR2 -->
+  <rule ref="PSR1"/>
+  <rule ref="PSR2"/>
+
+  <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+
+  <!-- include most of the Squiz commenting rules -->
+  <rule ref="Squiz.Commenting">
+    <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+    <exclude name="Squiz.Commenting.InlineComment.NotCapital"/>
+    <exclude name="Squiz.Commenting.InlineComment.SpacingAfter"/>
+
+    <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
+    <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
+    <exclude name="Squiz.Commenting.LongConditionClosingComment.SpacingBefore"/>
+
+    <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+    <exclude name="Squiz.Commenting.FunctionComment.MissingReturn"/>
+    <exclude name="Squiz.Commenting.FunctionComment.MissingReturnType"/>
+    <exclude name="Squiz.Commenting.FunctionComment.ThrowsNoFullStop"/>
+    <exclude name="Squiz.Commenting.FunctionComment.ThrowsNotCapital" />
+
+    <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
+    <exclude name="Squiz.Commenting.FileComment.IncorrectAuthor"/>
+    <exclude name="Squiz.Commenting.FileComment.IncorrectCopyright"/>
+    <exclude name="Squiz.Commenting.FileComment.AuthorTagOrder"/>
+    <exclude name="Squiz.Commenting.FileComment.CopyrightTagOrder"/>
+    <exclude name="Squiz.Commenting.FileComment.SubpackageTagOrder"/>
+    <exclude name="Squiz.Commenting.FileComment.MissingSubpackageTag"/>
+
+    <exclude name="Squiz.Commenting.PostStatementComment.Found"/>
+
+    <exclude name="CodeStandard.Commenting.FunctionComment.ParamCommentFullStop" />
+    <exclude name="CodeStandard.Commenting.FunctionComment.ThrowsNoFullStop"/>
+    <exclude name="CodeStandard.Commenting.FunctionComment.ThrowsNotCapital" />
+
+  </rule>
+
+  <!-- error on fixme, warning on todo -->
+  <rule ref="Generic.Commenting.Fixme"/>
+  <rule ref="Generic.Commenting.Todo"/>
+  <rule ref="Generic.Commenting.Todo.CommentFound"><severity>3</severity></rule>
+
+  <!-- custom sniffs -->
+  <rule ref="CodeStandard.Commenting.FunctionComment"/>
+
+</ruleset>

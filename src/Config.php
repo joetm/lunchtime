@@ -1,31 +1,52 @@
 <?php
 
+/**
+ * Config class
+ *
+ * @package   LunchTime
+ * @author    J. Oppenlaender
+ * @copyright MIT
+ * @link      https://github.com/joetm/lunchtime
+ * @version   '2017-01'
+ *
+ */
+
 namespace LunchTime;
 
-
-class Config
+/**
+ * Configuration class
+ */
+final class Config
 {
-	private static $config = null;
+    /** @var array $config Configuration */
+    private static $config = null;
 
-	/**
-	 * Configuration class
-	 *
-     * @throws \Exception 			If configuration could not be loaded from config.json
-	 */
-	public static function get($key) {
-		self::load();
-		// if key does not exist
-		if (!self::$config[$key]) {
-			throw new \Exception("Config key " . $key . " not found", 1);
-		}
-		// key exists
-		return self::$config[$key];
-	}
+    /**
+     * Configuration class
+     *
+     * @param string $key Key to look up
+     * @return string Configuration value
+     *
+     * @throws \Exception           If configuration could not be loaded from config.json
+     */
+    public static function get($key)
+    {
+        self::load();
+        // if key does not exist
+        if (!self::$config[$key]) {
+            throw new \Exception("Config key " . $key . " not found", 1);
+        }
+        // key exists
+        return self::$config[$key];
+    }
 
-	public static function load() {
-		if (!self::$config) {
-			self::$config = \Noodlehaus\Config::load('config.json');
-		}
-	}
-
+    /**
+     * Load the whole config
+     */
+    public static function load()
+    {
+        if (!self::$config) {
+            self::$config = \Noodlehaus\Config::load('config.json');
+        }
+    }
 }
