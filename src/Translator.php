@@ -15,6 +15,7 @@ namespace LunchTime;
 
 use Google\Cloud\Translate\TranslateClient;
 use LunchTime\DB;
+use LunchTime\Config;
 
 /**
  * Translator class
@@ -35,12 +36,11 @@ class Translator
      */
     public function __construct()
     {
-        define('GOOGLEPROJECTID', 'fub-hcc');
-        define('GOOGLE_ACCESS_TOKEN', 'ya29.El_MA7vLh1t1lsRdJgMFqucCE9cgxanwfl4BmtN7hBzOvPnUitgwfUbWIyPahDkmdHxGLjfzt6qaFfTYp0fk8k1EQWbWsA59dKI5z6MAgJqT--Z0gKW5cPGNKXM6NM17ng');
+        define('GOOGLE_ACCESS_TOKEN', Config::get('googleaccesstoken'));
 
         // Instantiate a client
         $this->translationClient = new TranslateClient([
-            'projectId' => GOOGLEPROJECTID
+            'projectId' => Config::get('googleprojectid')
         ]);
 
         $this->db = new DB();

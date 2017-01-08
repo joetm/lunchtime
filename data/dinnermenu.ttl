@@ -1,189 +1,189 @@
 
-<fublunch:menuitem_13> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Pommes" , "Tiroler" , "Schnitzel" , "Waldpilzrahm" , "Karotten" , "Kroketten" , "Salat" , "苹果"@zh , "Apples"@en , "Pommes"@fr , "蒂罗尔"@zh , "肉片"@zh , "Waldpilzrahm"@zh , "红萝卜"@zh , "肉饼"@zh , "萨拉特"@zh , "Tyrolean"@en , "schnitzel"@en , "Waldpilzrahm"@en , "carrots"@en , "croquettes"@en , "Salat"@en , "tyrolien"@fr , "schnitzel"@fr , "Waldpilzrahm"@fr , "carottes"@fr , "croquettes"@fr , "Salat"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" ;
-	<http://purl.org/dc/terms/title> "Tiroler Schnitzel mit Waldpilzrahm und Karotten, Pommes oder Kroketten, Salat" , "Tirolerschnitzel with Waldpilzrahm and carrots, fries or croquettes, salad"@en , "Tirolerschnitzel与Waldpilzrahm和胡萝卜，薯条或肉饼，沙拉"@zh , "Tirolerschnitzel avec Waldpilzrahm et les carottes, frites ou croquettes, salade"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://purl.org/ontology/fo/side_dish> "Salat" , "萨拉特"@zh , "Salat"@en , "Salat"@fr ;
-	<http://www.wikidata.org/entity/P2894> "Mittwoch" ;
-	<http://www.wikidata.org/entity/P2284> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_14> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> false ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Vierländer" , "Gemüseeintopf" , "Nudeln" , "四国"@zh , "蔬菜炖"@zh , "面条"@zh , "Four countries"@en , "vegetable stew"@en , "noodles"@en , "Quatre pays"@fr , "ragoût de légumes"@fr , "nouilles"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" , "Gemüse-Bouillon" ;
-	<http://purl.org/dc/terms/title> "Vierländer Gemüseeintopf mit Nudeln" , "Four countries vegetable stew with noodles"@en , "四个国家蔬菜炖面条"@zh , "Quatre pays ragoût de légumes avec des nouilles"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
-	<http://www.wikidata.org/entity/P2894> "Donnerstag" ;
-	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_15> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> false ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Grützwurst" , "Sauerkraut" , "土豆"@zh , "potatoes"@en , "pommes de terre"@fr , "黑布丁"@zh , "酸菜"@zh , "black pudding"@en , "Sauerkraut"@en , "boudin noir"@fr , "Choucroute"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" , "Gemüse-Bouillon" ;
-	<http://purl.org/dc/terms/title> "Grützwurst mit Sauerkraut und Kartoffeln" , "Black pudding with sauerkraut and potatoes"@en , "黑布丁配酸菜和土豆"@zh , "Boudin noir avec de la choucroute et pommes de terre"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://www.wikidata.org/entity/P2894> "Donnerstag" ;
-	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_16> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Wiener" , "Hackbraten" , "蔬菜"@zh , "vegetables"@en , "légume"@fr , "土豆"@zh , "potatoes"@en , "pommes de terre"@fr , "肉饼"@zh , "维纳"@zh , "Wiener"@en , "meatloaf"@en , "Wiener"@fr , "pain de viande"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Rind/Schweinefleisch" ;
-	<http://purl.org/dc/terms/title> "Wiener Hackbraten mit Gemüse und Kartoffeln" , "Viennese meatloaf with vegetables and potatoes"@en , "维也纳肉饼蔬菜和土豆"@zh , "meatloaf viennois avec des légumes et des pommes de terre"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://www.wikidata.org/entity/P2894> "Donnerstag" ;
-	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_17> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> false ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Entenkeule" , "Rotkohl" , "Klöße" , "土豆"@zh , "potatoes"@en , "pommes de terre"@fr , "Entenkeule"@zh , "红卷心菜"@zh , "饺子"@zh , "Entenkeule"@en , "Red cabbage"@en , "dumplings"@en , "Entenkeule"@fr , "chou rouge"@fr , "dumplings"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_1> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Geflügelfleisch" ;
-	<http://purl.org/dc/terms/title> "Entenkeule mit Rotkohl und Klöße oder Kartoffeln" , "Duck leg with red cabbage and dumplings or potatoes"@en , "鸭腿配红甘蓝和饺子或土豆"@zh , "Cuisse de canard au chou rouge et des boulettes ou des pommes de terre"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://www.wikidata.org/entity/P2894> "Donnerstag" ;
-	<http://www.wikidata.org/entity/P2284> "5.90"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_19> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Nudeln" , "Pilz-" , "Rahm" , "Schmorzwiebeln" , "Käse" , "面条"@zh , "noodles"@en , "nouilles"@fr , "蘑菇"@zh , "拉姆"@zh , "红烧洋葱"@zh , "奶酪"@zh , "Mushroom-"@en , "Rahm"@en , "braised onions"@en , "cheese"@en , "champignon"@fr , "Rahm"@fr , "oignons braisés"@fr , "fromage"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" ;
-	<http://purl.org/dc/terms/title> "Nudeln in Pilz- Rahm mit Schmorzwiebeln und Käse" , "Noodles in mushroom cream with stewed onions and cheese"@en , "面条奶油蘑菇炖用洋葱和芝士"@zh , "Nouilles à la crème de champignons avec des oignons et du fromage compote"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
-	<http://www.wikidata.org/entity/P2894> "Freitag" ;
-	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_20> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Sauce" , "Rotkohl" , "Bauern Art" , "Schweineroulade" , "土豆"@zh , "potatoes"@en , "pommes de terre"@fr , "酱"@zh , "Sauce"@en , "sauce"@fr , "红卷心菜"@zh , "Red cabbage"@en , "chou rouge"@fr , "农民艺术"@zh , "猪肉颤音"@zh , "farmers Art"@en , "pork roulade"@en , "agriculteurs Art"@fr , "porc roulade"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" ;
-	<http://purl.org/dc/terms/title> "Schweineroulade (Bauern Art) mit Rotkohl und Kartoffeln, Sauce" , "Pork roulade (farmer type) with red cabbage and potatoes, sauce"@en , "猪肉颤音（农户型）红白菜和土豆，酱"@zh , "Porc roulade (type fermier) avec du chou et des pommes de terre rouge, sauce"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://www.wikidata.org/entity/P2894> "Freitag" ;
-	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_21> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Reis" , "gebraten" , "Seehechtfilet" , "蔬菜"@zh , "vegetables"@en , "légume"@fr , "土豆"@zh , "potatoes"@en , "pommes de terre"@fr , "旅游"@zh , "Journey"@en , "Voyage"@fr , "炒"@zh , "fried"@en , "frit"@fr , "鳕鱼片"@zh , "hake fillet"@en , "filet de merlu"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" ;
-	<http://purl.org/dc/terms/title> "Seehechtfilet gebraten, mit Gemüse und Reis oder Kartoffeln" , "Hake fillet with vegetables and rice or potatoes"@en , "无须鳕鱼片蔬菜和米饭或土豆"@zh , "Filet de merluche avec des légumes et du riz ou des pommes de terre"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://www.wikidata.org/entity/P2894> "Freitag" ;
-	<http://www.wikidata.org/entity/P2284> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_1> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> false ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Spanische" , "Bauernsuppe" , "Hühnerfleisch" , "Gemüse" , "西班牙语"@zh , "鲍尔汤"@zh , "鸡"@zh , "蔬菜"@zh , "Spanish"@en , "farmer&#39;s soup"@en , "Chicken"@en , "vegetables"@en , "espagnol"@fr , "Bauer soupe"@fr , "poulet"@fr , "légume"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Geflügelfleisch" ;
-	<http://purl.org/dc/terms/title> "Spanische Bauernsuppe mit Hühnerfleisch und Gemüse" , "Spanish peasant soup with chicken and vegetables"@en , "西班牙农民汤鸡肉和蔬菜"@zh , "Espagnole soupe paysanne avec du poulet et des légumes"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Spanische" , "Bauernsuppe" , "Hühnerfleisch" , "Gemüse" ;
 	<http://www.wikidata.org/entity/P2894> "Montag" ;
-	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Spanische Bauernsuppe mit Hühnerfleisch und Gemüse" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false .
 
-<fublunch:menuitem_2> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Spaghetti" , "Fleischsauce" , "Reibekäse" , "意大利面"@zh , "肉酱"@zh , "磨碎"@zh , "Spaghetti"@en , "meat sauce"@en , "Grated"@en , "Spaghetti"@fr , "sauce à la viande"@fr , "râpé"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_2> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Rind/Schweinefleisch" ;
-	<http://purl.org/dc/terms/title> "Spaghetti mit Fleischsauce und Reibekäse" , "Spaghetti with meat sauce and grated cheese"@en , "肉酱和磨碎的奶酪意粉"@zh , "Spaghetti à la sauce à la viande et le fromage râpé"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Spaghetti" , "Fleischsauce" , "Reibekäse" ;
 	<http://www.wikidata.org/entity/P2894> "Montag" ;
-	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Spaghetti mit Fleischsauce und Reibekäse" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
 
-<fublunch:menuitem_3> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Gedünstetes" , "Fischfilet" , "Senfsauce" , "Kartoffeln" , "蔬菜"@zh , "vegetables"@en , "légume"@fr , "清蒸"@zh , "鱼片"@zh , "芥末酱"@zh , "土豆"@zh , "Steamed"@en , "fish fillet"@en , "mustard sauce"@en , "potatoes"@en , "étuvé"@fr , "filet de poisson"@fr , "sauce à la moutarde"@fr , "pommes de terre"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_3> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" ;
-	<http://purl.org/dc/terms/title> "Gedünstetes Fischfilet in Senfsauce mit Gemüse und Kartoffeln" , "Steamed fish fillet in mustard sauce with vegetables and potatoes"@en , "与蔬菜和土豆芥末酱蒸鱼鱼片"@zh , "filet de poisson cuit à la vapeur dans une sauce à la moutarde avec des légumes et des pommes de terre"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Gedünstetes" , "Fischfilet" , "Senfsauce" , "Kartoffeln" ;
 	<http://www.wikidata.org/entity/P2894> "Montag" ;
-	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Gedünstetes Fischfilet in Senfsauce mit Gemüse und Kartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
 
-<fublunch:menuitem_4> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Cordon" , "Bleu" , "vom" , "Schwein" , "Rahmchampignons" , "Pommes" , "Frites" , "蔬菜"@zh , "vegetables"@en , "légume"@fr , "警戒线"@zh , "蓝"@zh , "从"@zh , "猪"@zh , "Rahmchampignons"@zh , "苹果"@zh , "薯条"@zh , "cordon"@en , "Blue"@en , "from"@en , "pig"@en , "Rahmchampignons"@en , "Apples"@en , "Fries"@en , "Cordon"@fr , "Bleu"@fr , "à partir de"@fr , "porc"@fr , "Rahmchampignons"@fr , "Pommes"@fr , "Frites"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_4> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" ;
-	<http://purl.org/dc/terms/title> "Cordon Bleu vom Schwein mit Rahmchampignons, Gemüse und Pommes Frites" , "Pork Cordon Bleu with creamed mushrooms, vegetables and fries"@en , "猪肉蓝带与奶油蘑菇，蔬菜和薯条"@zh , "Porc Cordon Bleu avec des champignons à la crème, des légumes et des frites"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Cordon" , "Bleu" , "vom" , "Schwein" , "Rahmchampignons" , "Pommes" , "Frites" ;
 	<http://www.wikidata.org/entity/P2894> "Montag" ;
-	<http://www.wikidata.org/entity/P2284> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Cordon Bleu vom Schwein mit Rahmchampignons, Gemüse und Pommes Frites" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
 
-<fublunch:menuitem_5> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Knusper-" , "Gemüse-" , "Taschen" , "Reis" , "Sauce" , "蔬菜"@zh , "légume"@fr , "Knusper-"@zh , "手袋"@zh , "旅游"@zh , "酱"@zh , "Knusper-"@en , "Vegetables-"@en , "Bags"@en , "Journey"@en , "Sauce"@en , "Knusper-"@fr , "sacs"@fr , "Voyage"@fr , "sauce"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_5> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" ;
-	<http://purl.org/dc/terms/title> "Knusper- Gemüse- Taschen mit Reis und Sauce" , "Crunchy vegetable bags with rice and sauce"@en , "脆脆的蔬菜袋米饭和酱"@zh , "sacs de légumes croquants avec du riz et de la sauce"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Knusper-" , "Gemüse-" , "Taschen" , "Reis" , "Sauce" ;
 	<http://www.wikidata.org/entity/P2894> "Montag" ;
-	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
+	<http://purl.org/dc/terms/title> "Knusper- Gemüse- Taschen mit Reis und Sauce" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
 
-<fublunch:menuitem_6> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> false ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Ungarische" , "Wurstsuppe" , "Baguette" , "匈牙利"@zh , "香肠汤"@zh , "棒"@zh , "Hungarian"@en , "Sausage soup"@en , "Baguette"@en , "hongrois"@fr , "saucisse soupe"@fr , "Baguette"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_6> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" , "Gemüse-Bouillon" ;
-	<http://purl.org/dc/terms/title> "Ungarische Wurstsuppe mit Baguette" , "Hungarian sausage soup with baguette"@en , "匈牙利香肠汤面包"@zh , "soupe de saucisse hongroise avec baguette"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://purl.org/ontology/fo/side_dish> "Baguette" , "棒"@zh , "Baguette"@en , "Baguette"@fr ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Ungarische" , "Wurstsuppe" , "Baguette" ;
 	<http://www.wikidata.org/entity/P2894> "Dienstag" ;
-	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_7> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Ungarische Wurstsuppe mit Baguette" ;
 	<http://www.example.org/fub-hcc/lunch/allergy> false ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Reibekäse" , "Sauce" , "Makkaroni" , "Gorgonzola" , "磨碎"@zh , "Grated"@en , "râpé"@fr , "酱"@zh , "Sauce"@en , "sauce"@fr , "通心粉"@zh , "戈贡佐拉"@zh , "macaroni"@en , "Gorgonzola"@en , "macaroni"@fr , "Gorgonzola"@fr ;
+	<http://purl.org/ontology/fo/side_dish> "Baguette" .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_7> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" , "Gemüse-Bouillon" ;
-	<http://purl.org/dc/terms/title> "Makkaroni mit Gorgonzola Sauce und Reibekäse" , "Macaroni with gorgonzola sauce and grated cheese"@en , "通心粉和戈贡佐拉酱和磨碎的奶酪"@zh , "Macaroni avec sauce au gorgonzola et le fromage râpé"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Reibekäse" , "Sauce" , "Makkaroni" , "Gorgonzola" ;
 	<http://www.wikidata.org/entity/P2894> "Dienstag" ;
-	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
+	<http://purl.org/dc/terms/title> "Makkaroni mit Gorgonzola Sauce und Reibekäse" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false .
 
-<fublunch:menuitem_8> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Kasseler" , "-Braten" , "auf" , "Grünkohl" , "Petersilienkartoffeln" , "卡塞尔"@zh , "-Braten"@zh , "上"@zh , "羽衣甘蓝"@zh , "Petersilienkartoffeln"@zh , "Kassel"@en , "-Fry"@en , "on"@en , "Kale"@en , "Petersilienkartoffeln"@en , "Kassel"@fr , "-Braten"@fr , "sur"@fr , "chou frisé"@fr , "Petersilienkartoffeln"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_8> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" ;
-	<http://purl.org/dc/terms/title> "Kasseler -Braten auf Grünkohl und Petersilienkartoffeln" , "Kassel -Braten on kale and parsley potatoes"@en , "卡塞尔-Braten的羽衣甘蓝，香菜土豆"@zh , "Kassel -Braten sur le chou frisé et pommes de terre persillées"@fr ;
-	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Kasseler" , "-Braten" , "auf" , "Grünkohl" , "Petersilienkartoffeln" ;
 	<http://www.wikidata.org/entity/P2894> "Dienstag" ;
-	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_9> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Reis" , "Rotbarschfilet" , "gebraten" , "蔬菜"@zh , "vegetables"@en , "légume"@fr , "土豆"@zh , "potatoes"@en , "pommes de terre"@fr , "旅游"@zh , "Journey"@en , "Voyage"@fr , "红鱼"@zh , "炒"@zh , "redfish"@en , "fried"@en , "sébaste"@fr , "frit"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" ;
-	<http://purl.org/dc/terms/title> "Rotbarschfilet gebraten, mit Gemüse und Reis oder Kartoffeln" , "Redfish fillet with vegetables and rice or potatoes"@en , "红鱼鱼片蔬菜和米饭或土豆"@zh , "Sébaste filet avec des légumes et du riz ou des pommes de terre"@fr ;
 	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Kasseler -Braten auf Grünkohl und Petersilienkartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_9> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "5.50"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Reis" , "Rotbarschfilet" , "gebraten" ;
 	<http://www.wikidata.org/entity/P2894> "Dienstag" ;
-	<http://www.wikidata.org/entity/P2284> "5.50"^^<http://www.w3.org/2001/XMLSchema#float> .
-
-<fublunch:menuitem_10> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Reis" , "Friesischer" , "Fischtopf" , "蔬菜"@zh , "vegetables"@en , "légume"@fr , "旅游"@zh , "Journey"@en , "Voyage"@fr , "Friesischer"@zh , "Fischtopf"@zh , "Friesischer"@en , "Fischtopf"@en , "Friesischer"@fr , "Fischtopf"@fr ;
-	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" ;
-	<http://purl.org/dc/terms/title> "Friesischer Fischtopf mit Gemüse und Reis" , "Friesian fish pot with vegetables and rice"@en , "黑白花鱼火锅蔬菜和大米"@zh , "pot de poisson frisonne avec des légumes et du riz"@fr ;
 	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Rotbarschfilet gebraten, mit Gemüse und Reis oder Kartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_10> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Reis" , "Friesischer" , "Fischtopf" ;
 	<http://www.wikidata.org/entity/P2894> "Mittwoch" ;
-	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Friesischer Fischtopf mit Gemüse und Reis" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
 
-<fublunch:menuitem_11> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> true ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Rahmspinat" , "gekochte" , "Eier" , "Stampfkartoffeln" , "Rahmspinat"@zh , "购买"@zh , "业主"@zh , "Stampfkartoffeln"@zh , "Rahmspinat"@en , "purchased"@en , "Owner"@en , "Stampfkartoffeln"@en , "Rahmspinat"@fr , "acheté"@fr , "propriétaire"@fr , "Stampfkartoffeln"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_11> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" ;
-	<http://purl.org/dc/terms/title> "Rahmspinat mit gekochte Eier und Stampfkartoffeln" , "Creamed with boiled eggs and mashed potatoes"@en , "用煮鸡蛋和土豆泥奶油"@zh , "Crémé avec des œufs durs et des pommes de terre en purée"@fr ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Rahmspinat" , "gekochte" , "Eier" , "Stampfkartoffeln" ;
+	<http://www.wikidata.org/entity/P2894> "Mittwoch" ;
 	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
-	<http://www.wikidata.org/entity/P2894> "Mittwoch" ;
-	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://purl.org/dc/terms/title> "Rahmspinat mit gekochte Eier und Stampfkartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
 
-<fublunch:menuitem_12> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+<http://www.example.org/fub-hcc/lunch/menuitem_12> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.wikidata.org/entity/P2894> "Mittwoch" ;
 	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://www.wikidata.org/entity/P2894> "Mittwoch" ;
-	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/allergy> false .
 
-<fublunch:menuitem_18> a <http://purl.org/ontology/fo/Menu> ;
-	<http://www.example.org/fub-hcc/lunch/allergy> false ;
-	<http://www.example.org/fub-hcc/lunch/keywords> "Baguette" , "Kesselgulasch" , "棒"@zh , "Baguette"@en , "Baguette"@fr , "Kesselgulasch"@zh , "Kesselgulasch"@en , "Kesselgulasch"@fr ;
+<http://www.example.org/fub-hcc/lunch/menuitem_13> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Pommes" , "Tiroler" , "Schnitzel" , "Waldpilzrahm" , "Karotten" , "Kroketten" , "Salat" ;
+	<http://www.wikidata.org/entity/P2894> "Mittwoch" ;
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Tiroler Schnitzel mit Waldpilzrahm und Karotten, Pommes oder Kroketten, Salat" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true ;
+	<http://purl.org/ontology/fo/side_dish> "Salat" .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_14> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" , "Gemüse-Bouillon" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Vierländer" , "Gemüseeintopf" , "Nudeln" ;
+	<http://www.wikidata.org/entity/P2894> "Donnerstag" ;
+	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
+	<http://purl.org/dc/terms/title> "Vierländer Gemüseeintopf mit Nudeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_15> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
 	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" , "Gemüse-Bouillon" ;
-	<http://purl.org/dc/terms/title> "Kesselgulasch mit Baguette" , "Goulash with baguette"@en , "土豆烧牛肉面包用"@zh , "Goulash avec baguette"@fr ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Grützwurst" , "Sauerkraut" ;
+	<http://www.wikidata.org/entity/P2894> "Donnerstag" ;
 	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
-	<http://purl.org/ontology/fo/side_dish> "Baguette" , "棒"@zh , "Baguette"@en , "Baguette"@fr ;
+	<http://purl.org/dc/terms/title> "Grützwurst mit Sauerkraut und Kartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_16> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Rind/Schweinefleisch" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Wiener" , "Hackbraten" ;
+	<http://www.wikidata.org/entity/P2894> "Donnerstag" ;
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Wiener Hackbraten mit Gemüse und Kartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_17> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "5.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Geflügelfleisch" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Entenkeule" , "Rotkohl" , "Klöße" ;
+	<http://www.wikidata.org/entity/P2894> "Donnerstag" ;
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Entenkeule mit Rotkohl und Klöße oder Kartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_18> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" , "Gemüse-Bouillon" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Baguette" , "Kesselgulasch" ;
 	<http://www.wikidata.org/entity/P2894> "Freitag" ;
-	<http://www.wikidata.org/entity/P2284> "3.20"^^<http://www.w3.org/2001/XMLSchema#float> .
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Kesselgulasch mit Baguette" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> false ;
+	<http://purl.org/ontology/fo/side_dish> "Baguette" .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_19> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "3.90"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fleischlos" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Nudeln" , "Pilz-" , "Rahm" , "Schmorzwiebeln" , "Käse" ;
+	<http://www.wikidata.org/entity/P2894> "Freitag" ;
+	<http://www.example.org/fub-hcc/lunch/vegetarian> true ;
+	<http://purl.org/dc/terms/title> "Nudeln in Pilz- Rahm mit Schmorzwiebeln und Käse" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_20> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "4.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Schweinefleisch" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Kartoffeln" , "Sauce" , "Rotkohl" , "Bauern Art" , "Schweineroulade" ;
+	<http://www.wikidata.org/entity/P2894> "Freitag" ;
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Schweineroulade (Bauern Art) mit Rotkohl und Kartoffeln, Sauce" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .
+
+<http://www.example.org/fub-hcc/lunch/menuitem_21> a <http://purl.org/ontology/fo/Menu> ;
+	<http://www.wikidata.org/entity/P2284> "5.70"^^<http://www.w3.org/2001/XMLSchema#float> ;
+	<http://www.example.org/fub-hcc/lunch/ingredients> "Fisch" ;
+	<http://www.example.org/fub-hcc/lunch/keywords> "Gemüse" , "Kartoffeln" , "Reis" , "gebraten" , "Seehechtfilet" ;
+	<http://www.wikidata.org/entity/P2894> "Freitag" ;
+	<http://www.example.org/fub-hcc/lunch/vegetarian> false ;
+	<http://purl.org/dc/terms/title> "Seehechtfilet gebraten, mit Gemüse und Reis oder Kartoffeln" ;
+	<http://www.example.org/fub-hcc/lunch/allergy> true .

@@ -10,5 +10,7 @@
 		"Brot",
 		"Baguette"
 	],
-	"dbfile": "cache/database.sqlite"
+	"dbfile": "cache/database.sqlite",
+	"googleprojectid": "fub-hcc",
+	"googleaccesstoken": "ya29.El_MA7vLh1t1lsRdJgMFqucCE9cgxanwfl4BmtN7hBzOvPnUitgwfUbWIyPahDkmdHxGLjfzt6qaFfTYp0fk8k1EQWbWsA59dKI5z6MAgJqT--Z0gKW5cPGNKXM6NM17ng"
 }

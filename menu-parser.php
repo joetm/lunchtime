@@ -32,6 +32,13 @@ $app->parseMenu();
 // translate the menu items
 // $app->translateMenu();
 
+// get URIs of supplementary information from Wikidata
+$app->matchWikidata();
+
+// harvest information from above URIs
+// TODO
+// $app->harvestWikidata();
+
 echo 'OK.' . PHP_EOL;
 
 // write everything to the output file

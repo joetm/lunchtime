@@ -1,2 +1,6 @@
 #!/bin/bash
-wget http://www.el-okle.de/Downloads/elokle.pdf
+
+# http://stackoverflow.com/a/246128/426266
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+wget http://www.el-okle.de/Downloads/elokle.pdf "$DIR/../data/elokle.pdf"

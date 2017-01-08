@@ -14,6 +14,7 @@
 namespace LunchTime;
 
 use LunchTime\Parser;
+use LunchTime\Harvester;
 use LunchTime\Translator;
 
 /**
@@ -23,7 +24,6 @@ class App
 {
     /** @var array $menuitems Menu items */
     protected $menuitems = array();
-
     /** @var array $legend Legend entries */
     protected $legend = array();
     /** @var array $translatedLegend Translated legend entries */
@@ -168,5 +168,27 @@ class App
                 } //end foreach
             } //end if
         } //end foreach
+    }
+
+    public function matchWikidata()
+    {
+        $harvester = new Harvester('https://query.wikidata.org/sparql?format=json&query=');
+
+        foreach ($this->legend as $key => $legendEntry) {
+            echo 'harvesting legend entry:' . $legendEntry . PHP_EOL;
+
+            $result = $harvester->queryByLabel($legendEntry);
+            // var_dump($result);
+            // var_dump($result['results']['bindings']);
+
+            if (count($result['results']['bindings']) > 0) {
+
+                echo "found " . count($result['results']['bindings']) . " results" . PHP_EOL;
+
+                foreach ($result['results']['bindings'] as $key => $binding) {
+                    echo " - " . $binding['thing']['value'] . PHP_EOL;
+                }
+            }
+        }
     }
 }

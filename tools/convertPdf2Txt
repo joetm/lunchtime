@@ -1,2 +1,6 @@
 #!/bin/bash
-pdftotext elokle.pdf elokle.txt -layout
+
+# http://stackoverflow.com/a/246128/426266
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+pdftotext "$DIR/../data/elokle.pdf" "$DIR/../data/elokle.txt" -layout
