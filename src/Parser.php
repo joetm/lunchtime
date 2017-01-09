@@ -260,7 +260,7 @@ class Parser
                         if (!$word) {
                             continue;
                         }
-                        if (in_array($word, Config::get('blacklist_words'))) {
+                        if (in_array($word, Config::get('blacklist'))) {
                             continue;
                         }
                         if (preg_match('~[\(\d+\.\)]~iU', $word)) {

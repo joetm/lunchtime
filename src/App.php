@@ -14,6 +14,7 @@
 namespace LunchTime;
 
 use LunchTime\Parser;
+use LunchTime\Config;
 use LunchTime\Harvester;
 use LunchTime\Translator;
 
@@ -172,10 +173,11 @@ class App
 
     public function matchWikidata()
     {
-        $harvester = new Harvester('https://query.wikidata.org/sparql?format=json&query=');
+        // $harvester = new Harvester('https://query.wikidata.org/sparql?format=json&query=');
+
+        $harvester = new Harvester('http://dbpedia.org/sparql?format=json&query=');
 
         foreach ($this->legend as $key => $legendEntry) {
-            echo 'harvesting legend entry:' . $legendEntry . PHP_EOL;
 
             $result = $harvester->queryByLabel($legendEntry);
             // var_dump($result);

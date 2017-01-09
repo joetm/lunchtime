@@ -33,8 +33,33 @@ class Harvester
         $this->endpoint = $endpoint;
     }
 
+    /**
+     * Query the data from the endpoint by its label.
+     *
+     * @param string $label Label to include in the query
+     *
+     * @return array Response body
+     */
     public function queryByLabel($label)
     {
+        // remove blacklisted words from the label before querying
+        $label = str_ireplace(Config::get('blacklist'), '', $label);
+
+        echo 'harvesting legend entry:' . $label . PHP_EOL;
+
+        // instanceof: wdt:P31
+        // we know we are querying only food ingredients (wd:Q27643250)
+        // => narrow the options, e.g. do not query "Zucker", the album by Rosenstolz
+                // ?thing wdt:P31 wd:Q27643250 .
+
+        // FILTER NOT EXISTS: do not include disambiguation pages
+                // ?thing wdt:P31 wd:Q4167410 .
+        // FILTER NOT EXISTS: do not include family names
+                // ?thing wdt:P31 wd:Q101352 .
+
+                // FILTER NOT EXISTS { ?thing wdt:P31 wd:Q101352 }
+                // FILTER NOT EXISTS { ?thing wdt:P31 wd:Q4167410 }
+
         $sparql = "
             SELECT ?thing WHERE {
                 ?thing rdfs:label \"" . $label . "\"@de .

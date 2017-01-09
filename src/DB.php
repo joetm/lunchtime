@@ -18,7 +18,7 @@ use LunchTime\Config;
 /**
  * DB class
  */
-class DB extends \SQLite3
+final class DB extends \SQLite3
 {
 
     /**

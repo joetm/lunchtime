@@ -1,5 +1,5 @@
 {
-	"blacklist_words": [
+	"blacklist": [
 		"und",
 		"oder",
 		"mit",
