@@ -34,15 +34,15 @@ class SPARQLEngine
     private static $headers = array('Accept' => 'application/sparql-results+json');
 
    /**
-     * Set the url with the urlencoded SPARQL
-     *
-     * @param string $sparql Sparql that is to be url-encoded
-     */
-     private static function setUrl($sparql) {
+    * Set the url with the urlencoded SPARQL
+    *
+    * @param string $sparql Sparql that is to be url-encoded
+    */
+    private static function setUrl($sparql)
+    {
         if (is_null(self::$endpoint)) {
             self::$endpoint = Config::get('endpoint');
         }
-        //
         self::$url = self::$endpoint . urlencode(trim($sparql));
     }
 
@@ -51,6 +51,8 @@ class SPARQLEngine
      *
      * @param string $sparql Sparql query
      * @param array  $params Parameters to inject into the query
+     *
+     * @throws Exception Exception is thrown, when parameter number does not match the supplied parameters
      */
     public static function prepare($sparql, array $params)
     {
@@ -95,6 +97,7 @@ class SPARQLEngine
      * Query SPARQL endpoint
      *
      * @return string $match Matched entity URI
+     * @throws SPARQLEngineException Warns when get() is called before prepare()
      */
     public static function get()
     {

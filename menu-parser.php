@@ -31,7 +31,7 @@ $app->init(INPUT, OUTPUT);
 $app->parseMenu();
 
 // translate the menu items
-// $app->translateMenu();
+$app->translateMenu();
 
 // get URIs of supplementary information from Wikidata
 $app->matchWikidata();

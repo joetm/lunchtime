@@ -60,8 +60,8 @@ class Harvester
 
         // MUST have an English label
             // FILTER EXISTS {
-            //     ?x rdfs:label ?enLabel .
-            //     FILTER(langMatches(lang(?enLabel), "en"))
+            // ?x rdfs:label ?enLabel .
+            // FILTER(langMatches(lang(?enLabel), "en"))
             // }
 
         // Transitivity:
@@ -73,17 +73,17 @@ class Harvester
 
         // FILTER: only include those entities that have an English label
         // $sparql = "
-        //     SELECT ?thing WHERE {
-        //         ?thing rdfs:label+ \"{1}\"@de .
-        //     }
+        // SELECT ?thing WHERE {
+        // ?thing rdfs:label+ \"{1}\"@de .
+        // }
         // ";
 
         // regex version:
             // PREFIX wikibase: <http://wikiba.se/ontology#>
             // SELECT ?thing WHERE {
-            //     ?thing rdfs:label ?name
-            //     FILTER(langMatches(lang(?name), "de"))
-            //     FILTER regex(?name, "^Fisch", "i")
+            // ?thing rdfs:label ?name
+            // FILTER(langMatches(lang(?name), "de"))
+            // FILTER regex(?name, "^Fisch", "i")
             // }
 
             // PREFIX wikibase: <http://wikiba.se/ontology#>

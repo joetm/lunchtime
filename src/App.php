@@ -117,10 +117,12 @@ class App
     {
         $translator = new Translator();
 
-        return;
-
         $this->translatedLegend = $translator->translate($this->legend);
         // var_dump($this->translatedLegend);
+
+        // var_dump($this->translatedLegend);
+        // exit;
+        // return;
 
         // $translatedMenuItems = $translator->translate($this->menuitems);
         // var_dump($translatedMenuItems);
@@ -171,6 +173,12 @@ class App
         } //end foreach
     }
 
+    /**
+     * Match entities on wikiData
+     *
+     * @param string $inputfile  Path to the file to open
+     * @param string $outputfile Path to the file to write
+     */
     public function matchWikidata()
     {
         $harvester = new Harvester('https://query.wikidata.org/sparql?format=json&query=');

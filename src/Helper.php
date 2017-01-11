@@ -39,7 +39,8 @@ class Helper
      *
      * @return array If no plural was generated, returns an array with the singular. Otherwise, returns an array with singular and plural.
      */
-    public static function pluralize($word) {
+    public static function pluralize($word)
+    {
         $output = array($word);
         // find the plural of the input
 

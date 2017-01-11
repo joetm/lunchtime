@@ -56,6 +56,7 @@ class Translator
      */
     public function translate($input, $target = null)
     {
+
         if ($target) {
             if (is_array($target)) {
                 $langs = $target;
@@ -72,6 +73,7 @@ class Translator
             echo 'translating array with ' . count($input) .
                 ' items into ' . count($langs) .
                 ' languages' . PHP_EOL;
+
             $output = $this->translateArray($input, $langs);
             // } else {
             // echo 'translating: ' . $input . PHP_EOL;
@@ -91,7 +93,8 @@ class Translator
     protected function getCachedTranslation($key)
     {
         $sql = "SELECT value from translations WHERE key = '" . $key . "';";
-        return $this->db->query($sql);
+
+        return $this->db->queryCache($sql);
     }
 
     /**

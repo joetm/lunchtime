@@ -13,6 +13,8 @@
 
 namespace LunchTime;
 
+use \SQLite3;
+
 use LunchTime\Config;
 
 /**
@@ -29,7 +31,7 @@ final class DB extends \SQLite3
     public function __construct()
     {
         // load dbfile config
-        $dbfile = Config::get('dbfile');
+        $dbfile = realpath(__DIR__ . "/../" . Config::get('dbfile'));
         if (!$dbfile) {
             throw new Exception("Could not open database connection", 1);
         }
@@ -76,7 +78,7 @@ final class DB extends \SQLite3
      *
      * @return array $row Result row
      */
-    public function query($sql)
+    public function queryCache($sql)
     {
         $result = $this->query($sql);
         if (!$result) {
@@ -84,6 +86,7 @@ final class DB extends \SQLite3
         }
 
         $row = $result->fetchArray(SQLITE3_ASSOC);
+
         return $row;
     }
 }
