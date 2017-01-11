@@ -127,6 +127,14 @@ class Parser
 
         // var_dump($legend);
 
+        // write the legend for DEV inspection
+        $f = fopen(realpath(__DIR__ . '/../data/legend.json'), 'w');
+        if ($f) {
+            fwrite($f, json_encode($this->legend, JSON_PRETTY_PRINT));
+            echo 'written legend.json' . PHP_EOL;
+        }
+        fclose($f);
+
         return $this->legend;
     }
 

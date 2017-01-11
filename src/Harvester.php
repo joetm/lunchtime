@@ -13,25 +13,14 @@
 
 namespace LunchTime;
 
-use Requests;
+use LunchTime\Helper;
+use LunchTime\SPARQLEngine;
 
 /**
  * Harvester class
  */
 class Harvester
 {
-    /** @var string $endoint SPARQL endpoint */
-    protected $endpoint = null;
-
-    /**
-     * Constructor.
-     *
-     * @param string $endpoint SPARQL REST endpoint
-     */
-    public function __construct($endpoint)
-    {
-        $this->endpoint = $endpoint;
-    }
 
     /**
      * Query the data from the endpoint by its label.
@@ -43,43 +32,77 @@ class Harvester
     public function queryByLabel($label)
     {
         // remove blacklisted words from the label before querying
-        $label = str_ireplace(Config::get('blacklist'), '', $label);
+        foreach (Config::get('blacklist') as $blacklistedWord) {
+            $label = preg_replace(array(
+                "~^" . $blacklistedWord . "\s+~iuU",
+                // "~\s+" . $blacklistedWord . "~iuU",
+            ), '', $label);
+        }
 
         echo 'harvesting legend entry:' . $label . PHP_EOL;
+
+        // $test = Helper::pluralize($label);
+        // var_dump($test);
+        // exit;
 
         // instanceof: wdt:P31
         // we know we are querying only food ingredients (wd:Q27643250)
         // => narrow the options, e.g. do not query "Zucker", the album by Rosenstolz
-                // ?thing wdt:P31 wd:Q27643250 .
+            // ?thing wdt:P31 wd:Q27643250 .
 
         // FILTER NOT EXISTS: do not include disambiguation pages
-                // ?thing wdt:P31 wd:Q4167410 .
+            // ?thing wdt:P31 wd:Q4167410 .
         // FILTER NOT EXISTS: do not include family names
-                // ?thing wdt:P31 wd:Q101352 .
+            // ?thing wdt:P31 wd:Q101352 .
 
-                // FILTER NOT EXISTS { ?thing wdt:P31 wd:Q101352 }
-                // FILTER NOT EXISTS { ?thing wdt:P31 wd:Q4167410 }
+            // FILTER NOT EXISTS { ?thing wdt:P31 wd:Q101352 }
+            // FILTER NOT EXISTS { ?thing wdt:P31 wd:Q4167410 }
 
+        // MUST have an English label
+            // FILTER EXISTS {
+            //     ?x rdfs:label ?enLabel .
+            //     FILTER(langMatches(lang(?enLabel), "en"))
+            // }
+
+        // Transitivity:
+        // ?x rdfs:subClassOf* :Animals .
+
+        // Problem: A query for Fisch returns several results (heraldic animal, municipality, familiy name). The entity on Wikipedia is stored as having the label "Fische".
+
+        // Solution: use German Wordnet service (GermaNet)
+
+        // FILTER: only include those entities that have an English label
+        // $sparql = "
+        //     SELECT ?thing WHERE {
+        //         ?thing rdfs:label+ \"{1}\"@de .
+        //     }
+        // ";
+
+        // regex version:
+            // PREFIX wikibase: <http://wikiba.se/ontology#>
+            // SELECT ?thing WHERE {
+            //     ?thing rdfs:label ?name
+            //     FILTER(langMatches(lang(?name), "de"))
+            //     FILTER regex(?name, "^Fisch", "i")
+            // }
+
+            // PREFIX wikibase: <http://wikiba.se/ontology#>
+
+                // { ?thing rdf:type owl:Class } UNION { ?thing rdf:type owl:Thing }
+
+        // https://www.mediawiki.org/wiki/Wikidata_query_service/User_Manual#Label_service
         $sparql = "
             SELECT ?thing WHERE {
-                ?thing rdfs:label \"" . $label . "\"@de .
+                ?thing rdfs:label+ \"{1}\"@de .
+                FILTER EXISTS {
+                    ?thing rdfs:label ?langLabel .
+                    FILTER(langMatches(lang(?langLabel), \"{2}\"))
+                }
             }
         ";
-        // SERVICE wikibase:label {
-        //     bd:serviceParam wikibase:language "de" .
-        // }
 
-        // Accept header is optional, since the format parameter is already included
-        $headers = array('Accept' => 'application/sparql-results+json');
+        SPARQLEngine::prepare($sparql, array($label, "en"));
 
-        $url = $this->endpoint . urlencode(trim($sparql));
-
-        $response = Requests::get($url, $headers);
-
-        if ($response->status_code !== 200) {
-            return false;
-        }
-
-        return json_decode($response->body, true); // return json body as array
+        return SPARQLEngine::get();
     }
 }

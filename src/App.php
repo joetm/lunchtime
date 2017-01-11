@@ -173,9 +173,10 @@ class App
 
     public function matchWikidata()
     {
-        // $harvester = new Harvester('https://query.wikidata.org/sparql?format=json&query=');
+        $harvester = new Harvester('https://query.wikidata.org/sparql?format=json&query=');
 
-        $harvester = new Harvester('http://dbpedia.org/sparql?format=json&query=');
+        // note: dbpedia also returns wikidata entities (sameAs relationships)
+        // $harvester = new Harvester('http://dbpedia.org/sparql?format=json&query=');
 
         foreach ($this->legend as $key => $legendEntry) {
 

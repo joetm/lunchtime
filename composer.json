@@ -17,14 +17,19 @@
     },
     "autoload": {
         "psr-4": {
-            "LunchTime\\": ["src/", "src/Exceptions"]
+            "LunchTime\\": [
+                "src/",
+                "src/Exceptions",
+                "src/AlignmentStrategies"
+            ]
         }
     },
     "require": {
         "google/cloud": "^0.20.1",
         "hassankhan/config": "^0.10.0",
         "rmccue/requests": "^1.7",
-        "silex/silex": "~2.0"
+        "silex/silex": "~2.0",
+        "friendsofphp/php-cs-fixer": "^2.0"
     },
     "require-dev": {
         "php": ">=5.4.0",

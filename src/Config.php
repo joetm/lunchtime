@@ -45,7 +45,7 @@ final class Config
      */
     public static function load()
     {
-        if (!self::$config) {
+        if (is_null(self::$config)) {
             self::$config = \Noodlehaus\Config::load('config.json');
         }
     }
