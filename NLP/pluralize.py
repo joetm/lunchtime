@@ -3,11 +3,12 @@
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 """
-    Return the plural form of a given word
+    Return the plural form of a given German word
 
     Warning: 84% accuracy for singularization and 72% for pluralization.
     Warning: Works only well if input is in singular already.
-    Warning: does not work with Umlauten - E.g. ß -> UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 13: ordinal not in range(128)
+    Warning: does not work with German Umlauts
+        - E.g. ß -> UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 13: ordinal not in range(128)
 """
 
 import sys
