@@ -3,4 +3,5 @@ vendor/
 FUB-HCC-serviceaccount.json
 node_modules/
 composer.lock
+yarn-error.log
 venv

@@ -1,6 +1,3 @@
 [submodule "RML-Mapper"]
-	path = RML-Mapper
+	path = tools/RML-Mapper
 	url = https://github.com/RMLio/RML-Mapper.git
-[submodule "sameAs-Lite"]
-	path = sameAs-Lite
-	url = https://github.com/seme4/sameAs-Lite.git

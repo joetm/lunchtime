@@ -1,0 +1,28 @@
+{
+  "name": "lunchtime",
+  "version": "0.0.1",
+  "description": "What's for dinner?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joetm/lunchtime.git"
+  },
+  "author": "JO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joetm/lunchtime/issues"
+  },
+  "homepage": "https://github.com/joetm/lunchtime#readme",
+  "dependencies": {
+    "rdf-ext": "^0.3.0",
+    "rdf-parser-n3": "^0.3.0",
+    "rdf-serializer-ntriples": "^0.3.0",
+    "rdf-store-fs": "^0.3.1",
+    "rdf-store-inmemory": "^0.3.0",
+    "rdf-store-singlegraph": "^0.3.0",
+    "simplerdf": "^0.2.14"
+  }
+}

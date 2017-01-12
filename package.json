@@ -2,27 +2,66 @@
   "name": "lunchtime",
   "version": "0.0.1",
   "description": "What's for dinner?",
+  "keywords": ["semantic web", "lunch"],
   "main": "index.js",
+  "repository": { "type": "git", "url": "https://github.com/joetm/lunchtime.git" },
+  "homepage": "https://github.com/joetm/lunchtime",
+  "bugs": "https://github.com/joetm/lunchtime/issues",
+  "author": "JO",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joetm/lunchtime.git"
+  "files": [
+  	"./src/**/*.{js,json}"
+  ],
+  "main": "./src/index.js",
+  "directories": {
+    "src": "./src/",
+    "docs": "./docs/",
+    "tests": "./tests/",
+    "tools": "./tools/",
+    "data": "./data/",
+    "NLP": "./NLP/",
   },
-  "author": "JO",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joetm/lunchtime/issues"
-  },
-  "homepage": "https://github.com/joetm/lunchtime#readme",
   "dependencies": {
+    "material-design-icons": "^3.0.1",
+    "material-ui": "^0.16.6",
     "rdf-ext": "^0.3.0",
     "rdf-parser-n3": "^0.3.0",
     "rdf-serializer-ntriples": "^0.3.0",
     "rdf-store-fs": "^0.3.1",
     "rdf-store-inmemory": "^0.3.0",
     "rdf-store-singlegraph": "^0.3.0",
-    "simplerdf": "^0.2.14"
+    "react": "^15.4.2",
+    "react-click-outside": "^2.2.0",
+    "react-dom": "^15.4.2",
+    "react-tap-event-plugin": "^2.0.1",
+    "roboto-fontface": "^0.6.0",
+    "simplerdf": "^0.2.14",
+    "whatwg-fetch": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "json5": "^0.5.1",
+    "json5-loader": "^0.6.0",
+    "node-sass": "^4.2.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-to-html-webpack-plugin": "^2.2.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }

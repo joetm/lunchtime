@@ -11,7 +11,7 @@
         "phpunit": "./vendor/bin/phpunit -c ./dev-tools/phpunit.xml",
         "reload": "composer dump-autoload",
         "test": "phpunit --bootstrap vendor/autoload.php tests",
-        "lint": "./vendor/bin/phpcs --warning-severity=0 --extensions=php --ignore=vendor/*,tests/*,data/*,cache/*,node_modules/*,repositories/*,RML-Mapper/*,CodeStandard/* --standard=CodeStandard ./",
+        "lint": "./vendor/bin/phpcs --warning-severity=0 --extensions=php --ignore=vendor/*,tests/*,data/*,cache/*,node_modules/*,repositories/*,tools/RML-Mapper/*,tools/CodeStandard/* --standard=tools/CodeStandard ./",
         "parallel-lint": "./vendor/bin/parallel-lint --exclude vendor .",
         "docs": "./vendor/bin/phpdoc -c ./dev-tools/phpdoc-config.xml"
     },
