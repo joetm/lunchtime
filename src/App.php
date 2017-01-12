@@ -128,46 +128,46 @@ class App
         // var_dump($translatedMenuItems);
 
         // translate the title
-        foreach ($menuitems as $key => $item) {
+        foreach ($this->menuitems as $key => $item) {
             // title translation
             // ---------------------
             // EN
-            $menuitems[$key]['translations']['en']['description'] = translate($item['description'], 'en');
+            $this->menuitems[$key]['translations']['en']['description'] = $translator->translate($item['description'], 'en');
             // FR
-            $menuitems[$key]['translations']['fr']['description'] = translate($item['description'], 'fr');
+            $this->menuitems[$key]['translations']['fr']['description'] = $translator->translate($item['description'], 'fr');
             // ZH
-            $menuitems[$key]['translations']['zh']['description'] = translate($item['description'], 'zh');
+            $this->menuitems[$key]['translations']['zh']['description'] = $translator->translate($item['description'], 'zh');
 
             // keyword translation
             // ---------------------
             if (isset($item['words'])) {
-                $menuitems[$key]['translations']['en']['words'] = array();
-                $menuitems[$key]['translations']['fr']['words'] = array();
-                $menuitems[$key]['translations']['zh']['words'] = array();
+                $this->menuitems[$key]['translations']['en']['words'] = array();
+                $this->menuitems[$key]['translations']['fr']['words'] = array();
+                $this->menuitems[$key]['translations']['zh']['words'] = array();
                 // translate the keywords
                 foreach ($item['words'] as $wordkey => $word) {
                     // EN
-                    $menuitems[$key]['translations']['en']['words'][$wordkey] = translate($word, 'en');
+                    $this->menuitems[$key]['translations']['en']['words'][$wordkey] = $translator->translate($word, 'en');
                     // FR
-                    $menuitems[$key]['translations']['fr']['words'][$wordkey] = translate($word, 'fr');
+                    $this->menuitems[$key]['translations']['fr']['words'][$wordkey] = $translator->translate($word, 'fr');
                     // ZH
-                    $menuitems[$key]['translations']['zh']['words'][$wordkey] = translate($word, 'zh');
+                    $this->menuitems[$key]['translations']['zh']['words'][$wordkey] = $translator->translate($word, 'zh');
                 } //end foreach
             } //end if
 
             // sidedish translation(s)
             // ---------------------
             if (isset($item['sidedishes']) && $item['sidedishes']) {
-                $menuitems[$key]['translations']['en']['sidedishes'] = array();
-                $menuitems[$key]['translations']['fr']['sidedishes'] = array();
-                $menuitems[$key]['translations']['zh']['sidedishes'] = array();
+                $this->menuitems[$key]['translations']['en']['sidedishes'] = array();
+                $this->menuitems[$key]['translations']['fr']['sidedishes'] = array();
+                $this->menuitems[$key]['translations']['zh']['sidedishes'] = array();
                 foreach ($item['sidedishes'] as $sidedishkey => $sidedish) {
                     // EN
-                    $menuitems[$key]['translations']['en']['sidedishes'][$sidedishkey] = translate($sidedish, 'en');
+                    $this->menuitems[$key]['translations']['en']['sidedishes'][$sidedishkey] = $translator->translate($sidedish, 'en');
                     // FR
-                    $menuitems[$key]['translations']['fr']['sidedishes'][$sidedishkey] = translate($sidedish, 'fr');
+                    $this->menuitems[$key]['translations']['fr']['sidedishes'][$sidedishkey] = $translator->translate($sidedish, 'fr');
                     // ZH
-                    $menuitems[$key]['translations']['zh']['sidedishes'][$sidedishkey] = translate($sidedish, 'zh');
+                    $this->menuitems[$key]['translations']['zh']['sidedishes'][$sidedishkey] = $translator->translate($sidedish, 'zh');
                 } //end foreach
             } //end if
         } //end foreach
@@ -188,7 +188,7 @@ class App
 
         foreach ($this->legend as $key => $legendEntry) {
 
-            $result = $harvester->queryByLabel($legendEntry);
+            $result = $harvester->queryURIByLabel($legendEntry);
             // var_dump($result);
             // var_dump($result['results']['bindings']);
 

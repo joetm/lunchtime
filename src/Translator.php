@@ -102,16 +102,17 @@ class Translator
      *
      * @param string $key   Key
      * @param string $value Value
+     * @param string $lang  Language
      *
      * @return boolean Query result
      */
-    protected function storeTranslation($key, $value)
+    protected function storeTranslation($key, $value, $lang = 'en')
     {
         $sql = "INSERT INTO translations (
-                key, value
+                key, value, language
             )
             VALUES (
-                '" . $key . "', '" . $value . "'
+                '" . $key . "', '" . $value . "', '" . $lang . "'
             );
         ";
         return $this->db->query($sql);
@@ -144,7 +145,7 @@ class Translator
             }
             $translation = $translation['text'];
 
-            $this->storeTranslation($translation);
+            $this->storeTranslation($text, $translation, $target);
         }
 
         return $translation;

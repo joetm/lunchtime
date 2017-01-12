@@ -31,13 +31,12 @@ $app->init(INPUT, OUTPUT);
 $app->parseMenu();
 
 // translate the menu items
-$app->translateMenu();
+// $app->translateMenu();
 
 // get URIs of supplementary information from Wikidata
 $app->matchWikidata();
 
-// harvest information from above URIs
-// TODO
+// harvest supplementary information from above URIs
 // $app->harvestWikidata();
 
 echo 'OK.' . PHP_EOL;

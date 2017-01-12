@@ -16,6 +16,7 @@ namespace LunchTime;
 use \SQLite3;
 
 use LunchTime\Config;
+use LunchTime\DBException;
 
 /**
  * DB class
@@ -31,10 +32,11 @@ final class DB extends \SQLite3
     public function __construct()
     {
         // load dbfile config
-        $dbfile = realpath(__DIR__ . "/../" . Config::get('dbfile'));
-        if (!$dbfile) {
-            throw new Exception("Could not open database connection", 1);
-        }
+        $dbfile = __DIR__ . "/../" . Config::get('dbfile');
+
+        // if (!$dbfile) {
+        //     throw new DBException("Could not open database connection", 1);
+        // }
 
         $this->open($dbfile);
 
@@ -51,13 +53,14 @@ final class DB extends \SQLite3
         //
         // set up the DB table, if it does not exist
         $sql = "CREATE TABLE IF NOT EXISTS translations (
-              key   TEXT PRIMARY KEY  NOT NULL,
-              value TEXT              NOT NULL
+              key      TEXT PRIMARY KEY  NOT NULL,
+              value    TEXT              NOT NULL,
+              language TEXT              NOT NULL
           );
         ";
         $response = $this->exec($sql);
         if (!$response) {
-            throw new Exception($this->db->lastErrorMsg(), 1);
+            throw new DBException($this->db->lastErrorMsg(), 1);
         } else {
             echo "Table `translations` created successfully" . PHP_EOL;
         }
