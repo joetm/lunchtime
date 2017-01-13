@@ -1,0 +1,394 @@
+{
+    "menu": [
+        {
+            "description": "Spanische Bauernsuppe mit H\u00fchnerfleisch und Gem\u00fcse",
+            "allergy": false,
+            "sidedishes": [],
+            "price": "3.20",
+            "weekday": "Montag",
+            "words": [
+                "Spanische",
+                "Bauernsuppe",
+                "H\u00fchnerfleisch",
+                "Gem\u00fcse"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Gefl\u00fcgelfleisch"
+            ],
+            "id": "menuitem_1"
+        },
+        {
+            "description": "Spaghetti mit Fleischsauce und Reibek\u00e4se",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "3.90",
+            "weekday": "Montag",
+            "words": [
+                "Spaghetti",
+                "Fleischsauce",
+                "Reibek\u00e4se"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Rind\/Schweinefleisch"
+            ],
+            "id": "menuitem_2"
+        },
+        {
+            "description": "Ged\u00fcnstetes Fischfilet in Senfsauce mit Gem\u00fcse und Kartoffeln",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "4.70",
+            "weekday": "Montag",
+            "words": [
+                "Ged\u00fcnstetes",
+                "Fischfilet",
+                "Senfsauce",
+                "Gem\u00fcse",
+                "Kartoffeln"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Fisch"
+            ],
+            "id": "menuitem_3"
+        },
+        {
+            "description": "Cordon Bleu vom Schwein mit Rahmchampignons, Gem\u00fcse und Pommes Frites",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "5.70",
+            "weekday": "Montag",
+            "words": [
+                "Cordon",
+                "Bleu",
+                "vom",
+                "Schwein",
+                "Rahmchampignons",
+                "Gem\u00fcse",
+                "Pommes",
+                "Frites"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Schweinefleisch"
+            ],
+            "id": "menuitem_4"
+        },
+        {
+            "description": "Knusper- Gem\u00fcse- Taschen mit Reis und Sauce",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "3.90",
+            "weekday": "Montag",
+            "words": [
+                "Knusper-",
+                "Gem\u00fcse-",
+                "Taschen",
+                "Reis",
+                "Sauce"
+            ],
+            "vegetarian": true,
+            "ingredients": [
+                "Fleischlos"
+            ],
+            "id": "menuitem_5"
+        },
+        {
+            "description": "Ungarische Wurstsuppe mit Baguette",
+            "allergy": false,
+            "sidedishes": [
+                "Baguette"
+            ],
+            "price": "3.20",
+            "weekday": "Dienstag",
+            "words": [
+                "Ungarische",
+                "Wurstsuppe",
+                "Baguette"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Schweinefleisch",
+                "Gem\u00fcse-Bouillon"
+            ],
+            "id": "menuitem_6"
+        },
+        {
+            "description": "Makkaroni mit Gorgonzola Sauce und Reibek\u00e4se",
+            "allergy": false,
+            "sidedishes": [],
+            "price": "3.90",
+            "weekday": "Dienstag",
+            "words": [
+                "Makkaroni",
+                "Gorgonzola",
+                "Sauce",
+                "Reibek\u00e4se"
+            ],
+            "vegetarian": true,
+            "ingredients": [
+                "Fleischlos",
+                "Gem\u00fcse-Bouillon"
+            ],
+            "id": "menuitem_7"
+        },
+        {
+            "description": "Kasseler -Braten auf Gr\u00fcnkohl und Petersilienkartoffeln",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "4.70",
+            "weekday": "Dienstag",
+            "words": [
+                "Kasseler",
+                "-Braten",
+                "auf",
+                "Gr\u00fcnkohl",
+                "Petersilienkartoffeln"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Schweinefleisch"
+            ],
+            "id": "menuitem_8"
+        },
+        {
+            "description": "Rotbarschfilet gebraten, mit Gem\u00fcse und Reis oder Kartoffeln",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "5.50",
+            "weekday": "Dienstag",
+            "words": [
+                "Rotbarschfilet",
+                "gebraten",
+                "Gem\u00fcse",
+                "Reis",
+                "Kartoffeln"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Fisch"
+            ],
+            "id": "menuitem_9"
+        },
+        {
+            "description": "Friesischer Fischtopf mit Gem\u00fcse und Reis",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "3.20",
+            "weekday": "Mittwoch",
+            "words": [
+                "Friesischer",
+                "Fischtopf",
+                "Gem\u00fcse",
+                "Reis"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Fisch"
+            ],
+            "id": "menuitem_10"
+        },
+        {
+            "description": "Rahmspinat mit gekochte Eier und Stampfkartoffeln",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "3.90",
+            "weekday": "Mittwoch",
+            "words": [
+                "Rahmspinat",
+                "gekochte",
+                "Eier",
+                "Stampfkartoffeln"
+            ],
+            "vegetarian": true,
+            "ingredients": [
+                "Fleischlos"
+            ],
+            "id": "menuitem_11"
+        },
+        {
+            "description": "",
+            "allergy": false,
+            "sidedishes": [],
+            "price": "4.70",
+            "weekday": "Mittwoch",
+            "words": [],
+            "vegetarian": false,
+            "ingredients": [],
+            "id": "menuitem_12"
+        },
+        {
+            "description": "Tiroler Schnitzel mit Waldpilzrahm und Karotten, Pommes oder Kroketten, Salat",
+            "allergy": true,
+            "sidedishes": [
+                "Salat"
+            ],
+            "price": "5.70",
+            "weekday": "Mittwoch",
+            "words": [
+                "Tiroler",
+                "Schnitzel",
+                "Waldpilzrahm",
+                "Karotten",
+                "Pommes",
+                "Kroketten",
+                "Salat"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Schweinefleisch"
+            ],
+            "id": "menuitem_13"
+        },
+        {
+            "description": "Vierl\u00e4nder Gem\u00fcseeintopf mit Nudeln",
+            "allergy": false,
+            "sidedishes": [],
+            "price": "3.20",
+            "weekday": "Donnerstag",
+            "words": [
+                "Vierl\u00e4nder",
+                "Gem\u00fcseeintopf",
+                "Nudeln"
+            ],
+            "vegetarian": true,
+            "ingredients": [
+                "Fleischlos",
+                "Gem\u00fcse-Bouillon"
+            ],
+            "id": "menuitem_14"
+        },
+        {
+            "description": "Gr\u00fctzwurst mit Sauerkraut und Kartoffeln",
+            "allergy": false,
+            "sidedishes": [],
+            "price": "3.90",
+            "weekday": "Donnerstag",
+            "words": [
+                "Gr\u00fctzwurst",
+                "Sauerkraut",
+                "Kartoffeln"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Schweinefleisch",
+                "Gem\u00fcse-Bouillon"
+            ],
+            "id": "menuitem_15"
+        },
+        {
+            "description": "Wiener Hackbraten mit Gem\u00fcse und Kartoffeln",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "4.70",
+            "weekday": "Donnerstag",
+            "words": [
+                "Wiener",
+                "Hackbraten",
+                "Gem\u00fcse",
+                "Kartoffeln"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Rind\/Schweinefleisch"
+            ],
+            "id": "menuitem_16"
+        },
+        {
+            "description": "Entenkeule mit Rotkohl und Kl\u00f6\u00dfe oder Kartoffeln",
+            "allergy": false,
+            "sidedishes": [],
+            "price": "5.90",
+            "weekday": "Donnerstag",
+            "words": [
+                "Entenkeule",
+                "Rotkohl",
+                "Kl\u00f6\u00dfe",
+                "Kartoffeln"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Gefl\u00fcgelfleisch"
+            ],
+            "id": "menuitem_17"
+        },
+        {
+            "description": "Kesselgulasch mit Baguette",
+            "allergy": false,
+            "sidedishes": [
+                "Baguette"
+            ],
+            "price": "3.20",
+            "weekday": "Freitag",
+            "words": [
+                "Kesselgulasch",
+                "Baguette"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Schweinefleisch",
+                "Gem\u00fcse-Bouillon"
+            ],
+            "id": "menuitem_18"
+        },
+        {
+            "description": "Nudeln in Pilz- Rahm mit Schmorzwiebeln und K\u00e4se",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "3.90",
+            "weekday": "Freitag",
+            "words": [
+                "Nudeln",
+                "Pilz-",
+                "Rahm",
+                "Schmorzwiebeln",
+                "K\u00e4se"
+            ],
+            "vegetarian": true,
+            "ingredients": [
+                "Fleischlos"
+            ],
+            "id": "menuitem_19"
+        },
+        {
+            "description": "Schweineroulade (Bauern Art) mit Rotkohl und Kartoffeln, Sauce",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "4.70",
+            "weekday": "Freitag",
+            "words": [
+                "Bauern Art",
+                "Schweineroulade",
+                "Rotkohl",
+                "Kartoffeln",
+                "Sauce"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Schweinefleisch"
+            ],
+            "id": "menuitem_20"
+        },
+        {
+            "description": "Seehechtfilet gebraten, mit Gem\u00fcse und Reis oder Kartoffeln",
+            "allergy": true,
+            "sidedishes": [],
+            "price": "5.70",
+            "weekday": "Freitag",
+            "words": [
+                "Seehechtfilet",
+                "gebraten",
+                "Gem\u00fcse",
+                "Reis",
+                "Kartoffeln"
+            ],
+            "vegetarian": false,
+            "ingredients": [
+                "Fisch"
+            ],
+            "id": "menuitem_21"
+        }
+    ]
+}
