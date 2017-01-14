@@ -2,6 +2,20 @@
 # yarn lockfile v1
 
 
+"@microsoft/load-themed-styles@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@microsoft/load-themed-styles/-/load-themed-styles-1.2.2.tgz#fa2fa1ca9c4f0c49623e2e48ad3ba30524495867"
+
+"@types/react-dom@^0.14.18":
+  version "0.14.20"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-0.14.20.tgz#6e30d66148e78b29ef593fa91ba30d0175190604"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^0.14.41":
+  version "0.14.57"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.57.tgz#1878a8654fafdd1d381b8457292b6433498c5b62"
+
 abbrev@1:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
@@ -98,6 +112,10 @@ arr-flatten@^1.0.1:
 array-find-index@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/array-find-index/-/array-find-index-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
+
+array-find@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/array-find/-/array-find-1.0.0.tgz#6c8e286d11ed768327f8e62ecee87353ca3e78b8"
 
 array-flatten@1.1.1:
   version "1.1.1"
@@ -1130,6 +1148,10 @@ color-convert@^1.3.0:
   dependencies:
     color-name "^1.1.1"
 
+color-functions@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/color-functions/-/color-functions-1.1.0.tgz#4cb805479065a3658c3269f48fac73eff00f95de"
+
 color-name@^1.0.0, color-name@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.1.tgz#4b1415304cf50028ea81643643bd82ea05803689"
@@ -1576,6 +1598,10 @@ execspawn@^1.0.1:
   resolved "https://registry.yarnpkg.com/execspawn/-/execspawn-1.0.1.tgz#8286f9dde7cecde7905fbdc04e24f368f23f8da6"
   dependencies:
     util-extend "^1.0.1"
+
+exenv@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.1.tgz#75de1c8dee02e952b102aa17f8875973e0df14f9"
 
 exit@0.1.2:
   version "0.1.2"
@@ -2115,6 +2141,17 @@ inherits@2.0.1:
 ini@~1.3.0:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
+
+inline-style-prefix-all@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/inline-style-prefix-all/-/inline-style-prefix-all-2.0.2.tgz#44e23c00d3521a36041e07c9b1e81bf36770b08c"
+
+inline-style-prefixer@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-1.0.4.tgz#849f657373a5cfbd8141cfddb013df6f68c6df39"
+  dependencies:
+    bowser "^1.0.0"
+    inline-style-prefix-all "^2.0.2"
 
 inline-style-prefixer@^2.0.1:
   version "2.0.5"
@@ -2940,6 +2977,15 @@ object.omit@^2.0.0:
     for-own "^0.1.4"
     is-extendable "^0.1.1"
 
+office-ui-fabric-react@^0.88.0:
+  version "0.88.0"
+  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-0.88.0.tgz#bac7983cd6a139c8fe213cc9f3cdcf33d08fb90a"
+  dependencies:
+    "@microsoft/load-themed-styles" "^1.2.2"
+    "@types/react" "^0.14.41"
+    "@types/react-dom" "^0.14.18"
+    color-functions "^1.1.0"
+
 on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
@@ -3443,6 +3489,15 @@ querystringify@0.0.x:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-0.0.4.tgz#0cf7f84f9463ff0ae51c4c4b142d95be37724d9c"
 
+radium@^0.18.1:
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/radium/-/radium-0.18.1.tgz#a01db9b4c6e6364de3b02d5976adf28d0b98351d"
+  dependencies:
+    array-find "^1.0.0"
+    exenv "^1.2.0"
+    inline-style-prefixer "^1.0.3"
+    rimraf "^2.4.0"
+
 randomatic@^1.1.3:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.6.tgz#110dcabff397e9dcff7c0789ccc0a49adf1ec5bb"
@@ -3780,7 +3835,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.2.8, rimraf@~2.5.1, rimraf@~2.5.4:
+rimraf@2, rimraf@^2.2.8, rimraf@^2.4.0, rimraf@~2.5.1, rimraf@~2.5.4:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
   dependencies:

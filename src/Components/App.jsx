@@ -1,12 +1,14 @@
 import React from 'react';
 
+import Radium, {StyleRoot} from 'radium';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import 'whatwg-fetch'; // see https://github.com/github/fetch
 
@@ -16,20 +18,20 @@ import LoadingAnim from './LoadingAnim.jsx';
 
 const URL = `./data/dinnermenu.json`;
 
-import {
-  cyan500, cyan700,
-  pinkA200,
-  grey100, grey300, grey400, grey500,
-  white, darkBlack, fullBlack,
-} from 'material-ui/styles/colors';
-const customTheme = {
-  palette: {
-    primary1Color: pinkA200,
-    primary2Color: cyan700,
-    primary3Color: grey400
-  }
-};
-const theme = getMuiTheme(customTheme);
+// import {
+//   cyan500, cyan700,
+//   pinkA200,
+//   grey100, grey300, grey400, grey500,
+//   white, darkBlack, fullBlack,
+// } from 'material-ui/styles/colors';
+// const customTheme = {
+//   palette: {
+//     primary1Color: pinkA200,
+//     primary2Color: cyan700,
+//     primary3Color: grey400
+//   }
+// };
+// const theme = getMuiTheme(customTheme);
 
 class App extends React.Component {
 
@@ -66,10 +68,8 @@ class App extends React.Component {
 
 	render () {
 		  return (
-          <MuiThemeProvider
-            	muiTheme={theme}
-          >
-	            <div>
+          <div>
+	            <StyleRoot>
         					<Nav
         						sitetitle="LunchTime"
         					/>
@@ -79,8 +79,8 @@ class App extends React.Component {
         					<Menuitems
         						{...this.state.dinnermenu}
         					/>
-    				  </div>
-          </MuiThemeProvider>
+    				  </StyleRoot>
+          </div>
 		  );
 	}
 
