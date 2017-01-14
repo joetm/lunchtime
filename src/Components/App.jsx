@@ -51,7 +51,7 @@ class App extends React.Component {
         }).then((dinnermenu) => {
             console.log('dinnermenu.json', dinnermenu);
             this.setState({
-                dinnermenu: dinnermenu,
+                dinnermenu: dinnermenu.menu,
                 loading: false
             });
         });
@@ -77,7 +77,7 @@ class App extends React.Component {
         						loading={this.state.loading}
         					/>
         					<Menuitems
-        						items={this.state.dinnermenu}
+        						{...this.state.dinnermenu}
         					/>
     				  </div>
           </MuiThemeProvider>
