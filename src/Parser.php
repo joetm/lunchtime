@@ -210,7 +210,7 @@ class Parser
             // if all fields were found, store the item
             if ($this->currentday && isset($item['description']) && isset($item['price'])) {
                 // day of the week
-                $item['weekday'] = $this->currentday;
+                // $item['weekday'] = $this->currentday;
                 // words
                 $item['words'] = array();
                 // vegetarisch?
@@ -280,7 +280,11 @@ class Parser
                 }
                 $id++;
                 $item['id'] = 'menuitem_' . $id;
-                $menuitems[] = $item;
+                if (!isset($menuitems[$this->currentday])) {
+                    $menuitems[$this->currentday] = array( $item );
+                } else {
+                    array_push($menuitems[$this->currentday], $item);
+                }
             }
         }
 

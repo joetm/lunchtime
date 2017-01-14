@@ -28,10 +28,11 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|vendor|repositories|venv)/,
-        loader: 'babel-loader',
+        loader: 'babel', //-loader (optional)
         query: {
-          presets: ['react', 'es2015'], // , 'stage-0'
-          plugins: ['react-html-attrs', 'transform-decorators-legacy', 'transform-class-properties'],
+          // cacheDirectory: true,
+          presets: ['es2015', 'stage-0', 'react'],
+          plugins: ['transform-decorators-legacy', 'react-html-attrs', 'transform-class-properties'],
         }
       },
       // {

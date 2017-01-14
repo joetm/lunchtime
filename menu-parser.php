@@ -22,24 +22,30 @@ use LunchTime\App;
 define('INPUT', __DIR__ . '/data/elokle.txt');
 define('OUTPUT', __DIR__ . '/data/dinnermenu.json');
 
-$app = new App();
+// try {
 
-// init the app with the input and output files
-$app->init(INPUT, OUTPUT);
+	$app = new App();
 
-// get the menu items and the legend entries from the text file
-$app->parseMenu();
+	// init the app with the input and output files
+	$app->init(INPUT, OUTPUT);
 
-// translate the menu items
-// $app->translateMenu();
+	// get the menu items and the legend entries from the text file
+	$app->parseMenu();
 
-// get URIs of supplementary information from Wikidata
-$app->matchWikidata();
+	// translate the menu items
+	// $app->translateMenu();
 
-// harvest supplementary information from above URIs
-// $app->harvestWikidata();
+	// get URIs of supplementary information from Wikidata
+	// $app->matchWikidata();
 
-echo 'OK.' . PHP_EOL;
+	// harvest supplementary information from above URIs
+	// $app->harvestWikidata();
 
-// write everything to the output file
-$app->writeOutput();
+	echo 'OK.' . PHP_EOL;
+
+	// write everything to the output file
+	$app->writeOutput();
+
+// } catch (Requests_Exception $e) {
+
+// }

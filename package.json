@@ -2,9 +2,15 @@
   "name": "lunchtime",
   "version": "0.0.1",
   "description": "What's for dinner?",
-  "keywords": ["semantic web", "lunch"],
+  "keywords": [
+    "semantic web",
+    "lunch"
+  ],
   "main": "./src/index.js",
-  "repository": { "type": "git", "url": "https://github.com/joetm/lunchtime.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joetm/lunchtime.git"
+  },
   "homepage": "https://github.com/joetm/lunchtime",
   "bugs": "https://github.com/joetm/lunchtime/issues",
   "author": "JO",
@@ -16,7 +22,7 @@
     "server": "./node_modules/.bin/webpack-dev-server --content-base ./build/ --open"
   },
   "files": [
-  	"./src/**/*.{js,json}"
+    "./src/**/*.{js,json}"
   ],
   "directories": {
     "src": "./src/",
@@ -27,20 +33,19 @@
     "NLP": "./NLP/"
   },
   "dependencies": {
+    "leveldown": "^1.5.3",
+    "levelgraph": "^2.0.0",
+    "levelgraph-n3": "^1.2.0",
+    "levelup": "^1.3.3",
     "material-design-icons": "^3.0.1",
     "material-ui": "^0.16.6",
-    "rdf-ext": "^0.3.0",
-    "rdf-parser-n3": "^0.3.0",
-    "rdf-serializer-ntriples": "^0.3.0",
-    "rdf-store-fs": "^0.3.1",
-    "rdf-store-inmemory": "^0.3.0",
-    "rdf-store-singlegraph": "^0.3.0",
+    "rax": "^0.1.2",
+    "rax-components": "^0.1.2",
     "react": "^15.4.2",
     "react-click-outside": "^2.2.0",
     "react-dom": "^15.4.2",
     "react-tap-event-plugin": "^2.0.1",
     "roboto-fontface": "^0.6.0",
-    "simplerdf": "^0.2.14",
     "whatwg-fetch": "^2.0.1"
   },
   "devDependencies": {

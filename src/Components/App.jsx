@@ -57,31 +57,31 @@ class App extends React.Component {
         });
 	}
 
-    // abort the running request if component is unmounted
-    componentWillUnmount() {
-        if (this.serverRequest) {
-            this.serverRequest.abort();
-        }
-    }
+  // abort the running request if component is unmounted
+  componentWillUnmount() {
+      if (this.serverRequest) {
+          this.serverRequest.abort();
+      }
+  }
 
 	render () {
-		return (
-            <MuiThemeProvider
+		  return (
+          <MuiThemeProvider
             	muiTheme={theme}
-            >
+          >
 	            <div>
-					<Nav
-						sitetitle="LunchTime"
-					/>
-					<LoadingAnim
-						loading={this.state.loading}
-					/>
-					<Menuitems
-						items={this.state.dinnermenu}
-					/>
-				</div>
-            </MuiThemeProvider>
-		);
+        					<Nav
+        						sitetitle="LunchTime"
+        					/>
+        					<LoadingAnim
+        						loading={this.state.loading}
+        					/>
+        					<Menuitems
+        						items={this.state.dinnermenu}
+        					/>
+    				  </div>
+          </MuiThemeProvider>
+		  );
 	}
 
 }
