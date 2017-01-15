@@ -3,6 +3,7 @@ import React from 'react';
 import Radium from 'radium';
 
 import ReactHeight from 'react-height/build/react-height.js';
+import Divider from 'material-ui/Divider';
 
 import Menuitem from './Menuitem.jsx';
 import Clearfix from './Clearfix.jsx';
@@ -90,7 +91,10 @@ class Menuitems extends React.Component {
 
         return (
           <ReactHeight onHeightReady={height => console.log(height)}>
+            <Clearfix style={styles.main}>
               {menuitems}
+              <Divider />
+            </Clearfix>
           </ReactHeight>
         );
     }

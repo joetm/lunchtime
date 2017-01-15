@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import LoadingIcon from "material-ui/svg-icons/image/blur-circular";
+import LoadingIcon from "material-ui/svg-icons/image/blur-circular";
 
 const styles = {
     width: '100%',
@@ -42,7 +42,7 @@ export default class LoadingAnim extends React.PureComponent {
 
         return (
             <div style={isVisible} title="...loading...">
-            	<img style={styles} src="#.jpg" alt="loading" />
+            	<LoadingIcon style={styles} />
             </div>
         )
     }

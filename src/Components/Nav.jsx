@@ -1,10 +1,6 @@
 import React from 'react';
 
-import {
-  Button,
-  Link,
-  CommandBar
-} from 'office-ui-fabric-react';
+import AppBar from 'material-ui/AppBar';
 
 export default class Nav extends React.Component {
 	leftIconButtonTouchTap () {
@@ -12,12 +8,13 @@ export default class Nav extends React.Component {
 	}
 	render () {
 		return (
-			<div style={{backgroundColor:'#A0E0C0'}}>
-				<h1>{this.props.sitetitle}</h1>
-				<CommandBar
-		          searchPlaceholderText='Search...'
-		          elipisisAriaLabel='More options'
-		        />
+			<div>
+	            <AppBar
+	               style={{backgroundColor:'#A0E0C0'}}
+	               onLeftIconButtonTouchTap={this.leftIconButtonTouchTap.bind(this)}
+	               title={this.props.sitetitle}
+	               showMenuIconButton={false}
+	            />
 			</div>
 		);
 	}

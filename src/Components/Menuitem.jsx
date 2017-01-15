@@ -2,14 +2,10 @@ import React from 'react';
 
 import Radium from 'radium';
 
-import {
-  Callout,
-  Button,
-  Link,
-  Persona,
-  PersonaSize,
-  PersonaPresence,
-} from 'office-ui-fabric-react';
+import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import Chip from 'material-ui/Chip';
+import {red300} from 'material-ui/styles/colors';
 
 const styles = {
   chip: {
@@ -84,14 +80,35 @@ class Menuitem extends React.Component {
       console.log('this.props', this.props);
 
       return (
-          <div style={styles.menuCardItem}>
-              <Persona
-                  { ...examplePersona }
-                  size={ PersonaSize.tiny }
-                  presence={ PersonaPresence.offline }
-                  hidePersonaDetails={ false }
-              />
-          </div>
+          <Card style={{width:'45%',float:'right'}}>
+              <CardHeader
+                title={this.props.description}
+                subtitle={this.formatPrice(this.props.price)}
+                actAsExpander={false}
+              >
+                  <FloatingActionButton
+                    onMouseOver={this.mouseOverButton}
+                    onMouseOut={this.mouseOutButton}
+                    style={styles.buttonStyle}
+                  >
+                    <img src="img/dinner-test.jpg" />
+                  </FloatingActionButton>
+              </CardHeader>
+              <CardText style={styles.cardTextStyle}>
+                  <div style={styles.tagWrapper}>
+                      {
+                        this.props.words.map((tag) => (
+                            <Chip style={styles.chip}>{tag}</Chip>
+                        ))
+                      }
+                      {
+                        this.props.vegetarian ?
+                            <Chip style={styles.chip} backgroundColor={red300}>Vegetarian</Chip>
+                        : null
+                      }
+                  </div>
+              </CardText>
+          </Card>
     );
   }
 }
