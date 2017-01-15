@@ -56,7 +56,11 @@ module.exports = {
         test: /\.scss$/,
         exclude: [ /vendor/, /node_modules/, /repositories/, /venv/ ],
         loader: ExtractTextPlugin.extract("style", "css?sourceMap!postcss!sass?sourceMap&outputStyle=expanded")
-      }
+      },
+      {
+        test: /\.css$/,
+        loader: [ 'style-loader', 'css-loader' ].join("!")
+      },
     ]
   },
   resolve: {
@@ -70,7 +74,7 @@ module.exports = {
   //DEV
   [
     new ExtractTextPlugin('style.css', {
-      allChunks: true
+      // allChunks: true
     }),
     new CopyWebpackPlugin([
       {from: './data', to: './data'}
@@ -82,7 +86,7 @@ module.exports = {
   :
   [
     new ExtractTextPlugin('style.css', {
-      allChunks: true
+      // allChunks: true
     }),
     new CopyWebpackPlugin([
       {from: './data', to: './data'}

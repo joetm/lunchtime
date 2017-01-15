@@ -1,7 +1,8 @@
 import React from 'react';
 
+import Radium from 'radium';
+
 import ReactHeight from 'react-height/build/react-height.js';
-import Divider from 'material-ui/Divider';
 
 import Menuitem from './Menuitem.jsx';
 import Clearfix from './Clearfix.jsx';
@@ -40,13 +41,16 @@ class Menuitems extends React.Component {
     }
     render () {
 
-        if (!this.props) {
-         return null;
-        }
-
         console.log('this.props', this.props);
 
-        const menuitems = ["Montag", "Dienstag", "Mittwoch"].map((weekday) => {
+        const weekdays = Object.keys(this.props);
+        console.log('weekdays', weekdays);
+
+        if (!this.props || !weekdays.length) {
+            return null;
+        }
+
+        const menuitems = weekdays.map((weekday) => {
             if (this.props[weekday] === undefined) {
                 return;
             }
@@ -58,12 +62,12 @@ class Menuitems extends React.Component {
             ));
             console.log(weekday, 'items', items);
             return (
-                <div>
+                <Clearfix style={styles.main}>
                     <div style={styles.weekdayStyle}>
                         {weekday}
                     </div>
                     {items}
-                </div>
+                </Clearfix>
             );
         });
 
@@ -86,13 +90,10 @@ class Menuitems extends React.Component {
 
         return (
           <ReactHeight onHeightReady={height => console.log(height)}>
-            <Clearfix style={styles.main}>
               {menuitems}
-              <Divider />
-            </Clearfix>
           </ReactHeight>
         );
     }
 }
 
-export default Menuitems;
+export default Radium(Menuitems);

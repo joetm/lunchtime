@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LoadingIcon from "material-ui/svg-icons/image/blur-circular";
+// import LoadingIcon from "material-ui/svg-icons/image/blur-circular";
 
 const styles = {
     width: '100%',
@@ -11,7 +11,7 @@ const styles = {
     animation: 'spinner 1.6s linear infinite'
 };
 
-class LoadingAnim extends React.PureComponent {
+export default class LoadingAnim extends React.PureComponent {
     componentDidMount() {
         // see https://davidwalsh.name/add-rules-stylesheets
         // create a style element
@@ -42,10 +42,8 @@ class LoadingAnim extends React.PureComponent {
 
         return (
             <div style={isVisible} title="...loading...">
-            	<LoadingIcon style={styles} />
+            	<img style={styles} src="#.jpg" alt="loading" />
             </div>
         )
     }
 }
-
-export default LoadingAnim;
