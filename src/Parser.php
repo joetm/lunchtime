@@ -252,7 +252,7 @@ class Parser
                 preg_match_all('~(\([a-z0-9\-\s]+\))~iuU', $item['description'], $matches);
                 if (isset($matches[1])) {
                     foreach ($matches[1] as $w) {
-                        $item['words'][] = trim($w, "() ,.");
+                        $item['words'][] = trim($w, "() ,.-");
                         $prep_str = str_replace($w, '', $item['description']);
                     }
                 }

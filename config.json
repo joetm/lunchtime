@@ -7,6 +7,21 @@
 		"vom",
 		"in"
 	],
+	"prefixes": [
+		"Bauern",
+		"Reibe",
+		"Rahm",
+		"Stampf",
+		"Wald",
+		"Grütz",
+		"Gemüse",
+		"Enten",
+		"Hack",
+		"Kessel",
+		"Schmor",
+		"Petersilien",
+		"Salz",
+	],
 	"sidedishes": [
 		"Salat",
 		"Brot",

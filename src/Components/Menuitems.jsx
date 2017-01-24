@@ -2,7 +2,6 @@ import React from 'react';
 
 import Radium from 'radium';
 
-import ReactHeight from 'react-height/build/react-height.js';
 import Divider from 'material-ui/Divider';
 
 import Menuitem from './Menuitem.jsx';
@@ -15,6 +14,7 @@ const styles = {
   },
   weekdayStyle: {
     float:'left',
+    width: '10%',
     fontSize: '30px',
     fontWeight: 'bold',
     /* Safari */
@@ -28,18 +28,25 @@ const styles = {
     /* Internet Explorer */
     filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=3)',
   },
+  weekdayMenuStyle: {
+      float: 'right',
+      width: '90%',
+  },
 };
 
 class Menuitems extends React.Component {
+
     constructor (props) {
         super(props);
         this.state = {};
     }
+
     findValueDeals (items) {
         // TODO
 
 
     }
+
     render () {
 
         console.log('this.props', this.props);
@@ -61,41 +68,24 @@ class Menuitems extends React.Component {
                     {...this.props[weekday][index]}
                 />
             ));
-            console.log(weekday, 'items', items);
+            // console.log(weekday, 'items', items);
             return (
                 <Clearfix style={styles.main}>
                     <div style={styles.weekdayStyle}>
                         {weekday}
                     </div>
-                    {items}
+                    <div style={styles.weekdayMenuStyle}>
+                        {items}
+                    </div>
+                    <Divider />
                 </Clearfix>
             );
         });
 
-        // this.findValueDeals(this.props.items.menu);
-
-        // console.log('this.props.items.menu', this.props.items.menu);
-
-        // let menuitems = {};
-        // for (weekday in this.props.items.menu) {
-        //  if (!hasOwnProperty(this.props.items.menu[weekday])) {
-        //      continue;
-        //  }
-        //  menuitems[weekday] = this.props.items.menu[weekday].map((item) => (
-        //      <Menuitem
-        //          item={item}
-        //          isValueDeal={true}
-        //      />)
-        //  );
-        // }
-
         return (
-          <ReactHeight onHeightReady={height => console.log(height)}>
             <Clearfix style={styles.main}>
               {menuitems}
-              <Divider />
             </Clearfix>
-          </ReactHeight>
         );
     }
 }

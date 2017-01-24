@@ -4,14 +4,16 @@ import Radium from 'radium';
 
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
+import Avatar from 'material-ui/Avatar';
 import Chip from 'material-ui/Chip';
 import {red300} from 'material-ui/styles/colors';
 
 const styles = {
   chip: {
-    margin: 4,
+    margin: '4px 4px 4px 0',
     cursor: 'pointer',
-    backgroundColor: '#AA6060',
+    backgroundColor: '#EEEEEE',
+    border: '1px solid #AAAAAA',
   },
   tagWrapper: {
     display: 'flex',
@@ -20,30 +22,22 @@ const styles = {
   cardTextStyle: {
     fontWeight: 100,
   },
-  buttonStyle: {
+  imgStyle: {
     marginRight: 0,
     float: 'right',
     opacity: 0.6,
     cursor: 'pointer',
   },
   menuCardItem: {
-    width: '45%',
+    width: '100%',
     float: 'right',
     overflow: 'none',
     '@media (max-width: 800px)': {
-        width: '90%'
+        width: '100%'
     }
   },
 };
 
-const examplePersona = {
-  imageUrl: '/img/dinner-test.jpg',
-  imageInitials: 'AL',
-  primaryText: 'Annie Lindqvist',
-  secondaryText: 'Software Engineer',
-  tertiaryText: 'In a meeting',
-  optionalText: 'Available at 4:00pm'
-};
 
 class Menuitem extends React.Component {
     constructor (props) {
@@ -80,22 +74,26 @@ class Menuitem extends React.Component {
       console.log('this.props', this.props);
 
       return (
-          <Card style={{width:'45%',float:'right'}}>
+          <Card
+              style={styles.menuCardItem}
+          >
               <CardHeader
                 title={this.props.description}
                 subtitle={this.formatPrice(this.props.price)}
                 actAsExpander={false}
               >
-                  <FloatingActionButton
-                    onMouseOver={this.mouseOverButton}
-                    onMouseOut={this.mouseOutButton}
-                    style={styles.buttonStyle}
-                  >
-                    <img src="img/dinner-test.jpg" />
-                  </FloatingActionButton>
+                  <Avatar
+                    src="img/dinner-test.jpg"
+                    size={110}
+                    style={styles.imgStyle}
+                  />
               </CardHeader>
-              <CardText style={styles.cardTextStyle}>
-                  <div style={styles.tagWrapper}>
+              <CardText
+                  style={styles.cardTextStyle}
+              >
+                  <div
+                      style={styles.tagWrapper}
+                  >
                       {
                         this.props.words.map((tag) => (
                             <Chip style={styles.chip}>{tag}</Chip>
@@ -103,7 +101,9 @@ class Menuitem extends React.Component {
                       }
                       {
                         this.props.vegetarian ?
-                            <Chip style={styles.chip} backgroundColor={red300}>Vegetarian</Chip>
+                            <Chip style={styles.chip} backgroundColor={red300}>
+                                Vegetarian
+                            </Chip>
                         : null
                       }
                   </div>
