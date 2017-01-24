@@ -7,6 +7,13 @@
 		"vom",
 		"in"
 	],
+	"weekdays": [
+        "Montag",
+		"Dienstag",
+		"Mittwoch",
+		"Donnerstag",
+		"Freitag"
+	],
 	"prefixes": [
 		"Bauern",
 		"Reibe",
@@ -20,7 +27,7 @@
 		"Kessel",
 		"Schmor",
 		"Petersilien",
-		"Salz",
+		"Salz"
 	],
 	"sidedishes": [
 		"Salat",

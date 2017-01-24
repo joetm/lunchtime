@@ -109,6 +109,42 @@ class App
     }
 
     /**
+     * Get the images from Wikidata for each label
+     */
+    public function harvestImages()
+    {
+        $harvester = new Harvester();
+
+        // var_dump($this->menuitems);
+
+        if (!$this->menuitems) {
+            // TODO
+            throw new Exception("No menu items to process", 1);
+        }
+
+        // get the weekdays
+        foreach (Config::get('weekdays') as $weekday) {
+            echo $weekday . PHP_EOL;
+            if (!isset($this->menuitems[$weekday]) || !$this->menuitems[$weekday]) {
+                continue;
+            }
+            foreach ($this->menuitems[$weekday] as $menuitem) {
+                // var_dump($menuitem['words']);
+                if (isset($menuitem['words']) && count($menuitem['words'])) {
+                    foreach ($menuitem['words'] as $word) {
+
+                        $wikidataimgResult = $harvester->queryImageByLabel($word);
+
+
+                    }
+                }
+            }
+        }
+
+        exit('sssssss');
+    }
+
+    /**
      * Run the translator
      *
      * @return

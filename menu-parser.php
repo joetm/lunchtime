@@ -35,6 +35,9 @@ define('OUTPUT', __DIR__ . '/data/dinnermenu.json');
 	// translate the menu items
 	// $app->translateMenu();
 
+	// get image for each label
+	$app->harvestImages();
+
 	// get URIs of supplementary information from Wikidata
 	// $app->matchWikidata();
 
