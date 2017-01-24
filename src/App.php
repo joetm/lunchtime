@@ -133,8 +133,8 @@ class App
                 if (isset($menuitem['words']) && count($menuitem['words'])) {
                     foreach ($menuitem['words'] as $word) {
 
-                        $wikidataimgResult = $harvester->queryImageByLabel($word);
-
+                        $wikidataImgSrc = $harvester->queryImageByLabel($word);
+                        echo $wikidataImgSrc . PHP_EOL;
 
                     }
                 }

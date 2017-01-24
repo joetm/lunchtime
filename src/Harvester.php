@@ -13,6 +13,8 @@
 
 namespace LunchTime;
 
+use \ImageCache;
+
 use LunchTime\NLP;
 use LunchTime\Helper;
 use LunchTime\SPARQLEngine;
@@ -216,13 +218,18 @@ class Harvester
             return null;
         }
 
-        echo '  Found ' . $word . ' : ' . $wikidataimgResult['results']['bindings'][0]['image']['value'] . PHP_EOL;
+        // no bueno
+        $imgsrc = $result['results']['bindings'][0]['image']['value'];
+
+        echo '  Found ' . $label . ' : ' . $imgsrc . PHP_EOL;
 
         // download and cache image
-
-
-
+        $imagecache = new ImageCache();
         // no bueno
-        return $result;
+        $imagecache->cached_image_directory = dirname(__FILE__) . '/../cache';
+
+        $cached_src = $imagecache->cache($imgsrc);
+
+        return $cached_src;
     }
 }

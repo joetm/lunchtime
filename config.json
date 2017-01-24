@@ -34,7 +34,7 @@
 		"Brot",
 		"Baguette"
 	],
-	"dbfile": "cache/database.sqlite",
+	"dbfile": "data/database.sqlite",
 	"endpointBAK": "http://dbpedia.org/sparql?format=json&query=",
 	"endpoint": "https://query.wikidata.org/sparql?format=json&query=",
 	"googleprojectid": "fub-hcc",

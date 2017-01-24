@@ -30,7 +30,8 @@
         "rmccue/requests": "^1.7",
         "silex/silex": "~2.0",
         "friendsofphp/php-cs-fixer": "^2.0",
-        "agentile/php-stanford-nlp": "dev-master"
+        "agentile/php-stanford-nlp": "dev-master",
+        "nielse63/phpimagecache": "^1.0"
     },
     "require-dev": {
         "php": ">=5.4.0",
