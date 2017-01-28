@@ -129,6 +129,10 @@ class App
                 continue;
             }
             foreach ($this->menuitems[$weekday] as $menuitem) {
+                // initialise the images array once
+                if (!isset($menuitem['images'])) {
+                    $this->menuitems[$weekday]['images'] = array();
+                }
                 // var_dump($menuitem['words']);
                 if (isset($menuitem['words']) && count($menuitem['words'])) {
                     foreach ($menuitem['words'] as $word) {
@@ -136,12 +140,15 @@ class App
                         $wikidataImgSrc = $harvester->queryImageByLabel($word);
                         echo $wikidataImgSrc . PHP_EOL;
 
+                        // TODO: save the image src
+                        if ($wikidataImgSrc) {
+                            $this->menuitems[$weekday]['images'][$word] = $wikidataImgSrc;
+                        }
+
                     }
                 }
             }
         }
-
-        exit('sssssss');
     }
 
     /**

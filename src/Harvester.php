@@ -13,10 +13,9 @@
 
 namespace LunchTime;
 
-use \ImageCache;
-
 use LunchTime\NLP;
 use LunchTime\Helper;
+use LunchTime\ImageCache;
 use LunchTime\SPARQLEngine;
 
 /**
@@ -36,6 +35,7 @@ class Harvester
     {
         // e.g. jodiertes Salz -> Jodiertes Salz
         $str[0] = strtoupper($str[0]);
+        $str = trim($str, "- ");
         return $str;
     }
 
@@ -220,15 +220,15 @@ class Harvester
 
         // no bueno
         $imgsrc = $result['results']['bindings'][0]['image']['value'];
-
         echo '  Found ' . $label . ' : ' . $imgsrc . PHP_EOL;
 
         // download and cache image
-        $imagecache = new ImageCache();
         // no bueno
-        $imagecache->cached_image_directory = dirname(__FILE__) . '/../cache';
+        $cached_src = ImageCache::getImage($imgsrc);
 
-        $cached_src = $imagecache->cache($imgsrc);
+        if (!$cached_src) {
+            return null;
+        }
 
         return $cached_src;
     }
