@@ -19,7 +19,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack",
     "watch": "./node_modules/.bin/webpack --watch",
-    "server": "./node_modules/.bin/webpack-dev-server --content-base ./build/ --open"
+    "server": "./node_modules/.bin/webpack-dev-server --content-base ./build/ --open",
+    "next-dev": "./node_modules/.bin/next",
+    "next-build": "./node_modules/.bin/next build",
+    "next-start": "./node_modules/.bin/next start"
   },
   "files": [
     "./src/**/*.{js,json}"
@@ -39,6 +42,7 @@
     "levelup": "^1.3.3",
     "material-design-icons": "^3.0.1",
     "material-ui": "^0.16.6",
+    "next": "^1.2.3",
     "office-ui-fabric-react": "^0.88.0",
     "radium": "^0.18.1",
     "rax": "^0.1.2",
