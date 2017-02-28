@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Radium from 'radium';
+// import Radium from 'radium';
 
 import Divider from 'material-ui/Divider';
 
@@ -36,11 +36,6 @@ const styles = {
 
 class Menuitems extends React.Component {
 
-    constructor (props) {
-        super(props);
-        this.state = {};
-    }
-
     findValueDeals (items) {
         // TODO
 
@@ -49,7 +44,7 @@ class Menuitems extends React.Component {
 
     render () {
 
-        console.log('this.props', this.props);
+        console.log('Menuitems.props', this.props);
 
         const weekdays = Object.keys(this.props);
         console.log('weekdays', weekdays);
@@ -58,6 +53,7 @@ class Menuitems extends React.Component {
             return null;
         }
 
+        // menuitems
         const menuitems = weekdays.map((weekday) => {
             if (this.props[weekday] === undefined) {
                 return;
@@ -90,4 +86,5 @@ class Menuitems extends React.Component {
     }
 }
 
-export default Radium(Menuitems);
+// export default Radium(Menuitems);
+export default Menuitems;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Radium, {StyleRoot} from 'radium';
+// import Radium, {StyleRoot} from 'radium';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 // Needed for onTouchTap
@@ -10,7 +10,7 @@ injectTapEventPlugin();
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-import 'whatwg-fetch'; // see https://github.com/github/fetch
+import fetch from 'unfetch';
 
 import Nav from './Nav.jsx';
 import Menuitems from './Menuitems.jsx';
@@ -46,17 +46,15 @@ class App extends React.Component {
 
 	componentDidMount() {
 		//fetch the data
-
-        this.serverRequest = fetch(URL)
-        .then((response) => {
-            return response.json();
-        }).then((dinnermenu) => {
-            console.log('dinnermenu.json', dinnermenu);
-            this.setState({
-                dinnermenu: dinnermenu.menu,
-                loading: false
-            });
+    this.serverRequest = fetch(URL)
+    .then(r => r.json())
+    .then((dinnermenu) => {
+        console.log('dinnermenu.json', dinnermenu);
+        this.setState({
+            dinnermenu: dinnermenu.menu,
+            loading: false
         });
+    });
 	}
 
   // abort the running request if component is unmounted

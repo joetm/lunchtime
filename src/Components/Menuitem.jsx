@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Radium from 'radium';
+// import Radium from 'radium';
 
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
@@ -113,4 +113,5 @@ class Menuitem extends React.Component {
   }
 }
 
-export default Radium(Menuitem);
+// export default Radium(Menuitem);
+export default Menuitem;
