@@ -1,0 +1,11 @@
+{
+	"database": "leveldb",
+	"db_path": "/var/www/fu/lunchtime/data/triplestore",
+	"listen_host": "127.0.0.1",
+	"listen_port": "64210",
+	"read_only": false,
+	"load_size": 10000,
+	"timeout": 30,
+	"ignore_duplicate": true,
+	"ignore_missing": true
+}
