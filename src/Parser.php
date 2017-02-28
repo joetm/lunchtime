@@ -23,6 +23,9 @@ class Parser
     /** @var string $currentday Current day being processed */
     private $currentday = false;
 
+    /** @var integer $working_index Index to keep track of the current array item */
+    private $working_index = 0;
+
     /** @var array $weekdays Days of the week */
     private $weekdays = array('Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag');
 
@@ -210,7 +213,7 @@ class Parser
             // if all fields were found, store the item
             if ($this->currentday && isset($item['description']) && isset($item['price'])) {
                 // day of the week
-                // $item['weekday'] = $this->currentday;
+                $item['weekday'] = $this->currentday;
                 // words
                 $item['words'] = array();
                 // vegetarisch?
@@ -246,7 +249,7 @@ class Parser
                 }
 
                 $prep_str = '';
-                // contains Zubereitungsart, z.B. (Bauern Art)?
+                // contains Zubereitungsart, z.B. "(Bauern Art)"?
                 // --------------------------------------
                 $matches = array();
                 preg_match_all('~(\([a-z0-9\-\s]+\))~iuU', $item['description'], $matches);
@@ -278,12 +281,18 @@ class Parser
                     }
                     $item['words'] = array_merge($item['words'], $filtered_words);
                 }
+
                 $id++;
                 $item['id'] = 'menuitem_' . $id;
-                if (!isset($menuitems[$this->currentday])) {
-                    $menuitems[$this->currentday] = array( $item );
+
+                if (!isset($menuitems[$this->working_index])) {
+                    // weekday object
+                    // $menuitems[$this->currentday] = array( $item );
+                    // flat array
+                    $menuitems[] = $item;
+                    $this->working_index++;
                 } else {
-                    array_push($menuitems[$this->currentday], $item);
+                    array_push($menuitems[$this->working_index], $item);
                 }
             }
         }

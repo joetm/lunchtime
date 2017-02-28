@@ -3,4 +3,4 @@
 # http://stackoverflow.com/a/246128/426266
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-./RML-Mapper/RML-Mapper.jar -m "$DIR/../mapping.rml.ttl" -o "$DIR/../data/dinnermenu.ttl" -f ttl
+./RML-Mapper/RML-Mapper.jar -m "$DIR/mapping.rml.ttl" -o "$DIR/../data/dinnermenu.ttl" -f ttl

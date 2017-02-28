@@ -2,20 +2,6 @@
 # yarn lockfile v1
 
 
-"@microsoft/load-themed-styles@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@microsoft/load-themed-styles/-/load-themed-styles-1.2.2.tgz#fa2fa1ca9c4f0c49623e2e48ad3ba30524495867"
-
-"@types/react-dom@^0.14.18":
-  version "0.14.20"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-0.14.20.tgz#6e30d66148e78b29ef593fa91ba30d0175190604"
-  dependencies:
-    "@types/react" "*"
-
-"@types/react@*", "@types/react@^0.14.41":
-  version "0.14.57"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.57.tgz#1878a8654fafdd1d381b8457292b6433498c5b62"
-
 Base64@~0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/Base64/-/Base64-0.2.1.tgz#ba3a4230708e186705065e66babdd4c35cf60028"
@@ -1298,10 +1284,6 @@ color-convert@^1.3.0:
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.8.2.tgz#be868184d7c8631766d54e7078e2672d7c7e3339"
   dependencies:
     color-name "^1.1.1"
-
-color-functions@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/color-functions/-/color-functions-1.1.0.tgz#4cb805479065a3658c3269f48fac73eff00f95de"
 
 color-name@^1.0.0, color-name@^1.1.1:
   version "1.1.1"
@@ -3912,15 +3894,6 @@ object.omit@^2.0.0:
   dependencies:
     for-own "^0.1.4"
     is-extendable "^0.1.1"
-
-office-ui-fabric-react@^0.88.0:
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-0.88.0.tgz#bac7983cd6a139c8fe213cc9f3cdcf33d08fb90a"
-  dependencies:
-    "@microsoft/load-themed-styles" "^1.2.2"
-    "@types/react" "^0.14.41"
-    "@types/react-dom" "^0.14.18"
-    color-functions "^1.1.0"
 
 on-finished@~2.3.0:
   version "2.3.0"

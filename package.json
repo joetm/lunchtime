@@ -22,7 +22,9 @@
     "dev": "./node_modules/.bin/webpack-dev-server --content-base ./build/ --open",
     "next-dev": "./node_modules/.bin/next",
     "next-build": "./node_modules/.bin/next build",
-    "next-start": "./node_modules/.bin/next start"
+    "next-start": "./node_modules/.bin/next start",
+    "json2rdf-BAK": "cd ./tools/RML-Mapper && ./bin/RML-Mapper -m ../../mapping.rml.ttl -o ../../data/dinnermenu.ttl",
+    "json2rdf": "./tools/convertToRDF"
   },
   "files": [
     "./src/**/*.{js,json}"
@@ -43,7 +45,6 @@
     "material-design-icons": "^3.0.1",
     "material-ui": "^0.16.6",
     "next": "^1.2.3",
-    "office-ui-fabric-react": "^0.88.0",
     "radium": "^0.18.1",
     "rax": "^0.1.2",
     "rax-components": "^0.1.2",

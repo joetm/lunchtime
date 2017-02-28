@@ -1,0 +1,7 @@
+=============== Feb 28, 2017 (CET) ===============
+10:43:18.506691 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:43:18.506881 db@open opening
+10:43:18.510025 db@janitor F·2 G·0
+10:43:18.510046 db@open done T·3.152595ms
+10:43:18.514626 db@close closing
+10:43:18.514701 db@close done T·56.545µs
